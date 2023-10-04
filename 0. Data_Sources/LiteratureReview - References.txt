@@ -1,0 +1,42 @@
+APREff-correct (10.1145-3377811.3380338)  
+	https://github.com/TruX-DTF/APR-Efficiency/tree/master/Patches
+
+DL4-correct (10.1145-3324884.3416532) 
+	https://github.com/TruX-DTF/DL4PatchCorrectness/tree/master/data
+
+PatchSim-correct (10.1145-3180155.3180182) 
+	https://github.com/Ultimanecat/DefectRepairing/tree/master/tool/patches
+
+SeqR-correct (10.48550-arXiv:2205.01972) 
+	https://github.com/ASSERT-KTH/sequencer/tree/master/results/Defects4J_patches
+
+SharpFix-correct (10.48550-arXiv:1903.04583) 
+	https://github.com/sharpFix18/sharpFix/tree/master/expt0/sharpFix/d4j/repair
+
+ssFix-correct (10.48550-arXiv:1903.04583) 
+	https://github.com/sharpFix18/sharpFix/tree/master/expt0/ssFix/d4j/repair
+
+Knod-correct (10.48550-arXiv:2302.01857) 
+	https://github.com/lin-tan/knod/tree/main/results
+
+Ringbo-correct (10.1145-3505247) 
+	https://github.com/Ringbo/Cache/tree/master/patches
+
+HWKaka727-Dcorrect (10.1109-ESEM.2019.8870172 based on: 10.1007-s10664-020-09920-w/10.1145-3324884.3416590) 
+	https://github.com/Kaka727/correct_patch_analysis
+	https://anonymous.4open.science/r/cffe573f-61ab-4d99-9e7c-dc769d657e75/Patches
+	https://zenodo.org/record/3730599/files/Patches.zip
+
+HERCULES-Dcorrect (10.1109-ICSE.2019.00020 based on: 10.1007-s10664-020-09920-w/10.1145-3324884.3416590) 
+	https://arxiv.org/pdf/1906.08903.pdf
+	https://anonymous.4open.science/r/cffe573f-61ab-4d99-9e7c-dc769d657e75/Patches
+	https://zenodo.org/record/3730599/files/Patches.zip
+
+APCA-Ddifferent/Dcorrect (10.1145-3324884.3416590) 
+	https://zenodo.org/record/3730599
+	https://zenodo.org/record/3730599/files/Patches.zip
+	
+APAPR-Dcorrect (10.1007-s10664-020-09920-w)
+	https://anonymous.4open.science/api/repo/cffe573f-61ab-4d99-9e7c-dc769d657e75/file/Patches/
+	
+
