@@ -1,0 +1,76 @@
+from m in Methods
+join p in Projects
+on m.ParentProject.Name equals p.Name 
+group m by m.ParentProject into g 
+select new { g.Key,
+  CyclomaticComplexity=g.Key.ChildMethods.Average(m1 => m1.CyclomaticComplexity),
+  MaintainabilityIndex=g.Key.ChildMethods.Average(m1 => m1.MaintainabilityIndex),
+  NbUniqueOperands=g.Key.ChildMethods.Average(m1 => m1.NbUniqueOperands),
+  NbOperands=g.Key.ChildMethods.Average(m1 => m1.NbOperands),
+  NbUniqueOperators=g.Key.ChildMethods.Average(m1 => m1.NbUniqueOperators),
+  NbOperators=g.Key.ChildMethods.Average(m1 => m1.NbOperators),
+  ProgramLength=g.Key.ChildMethods.Average(m1 => m1.ProgramLength),  
+  VocabularySize=g.Key.ChildMethods.Average(m1 => m1.VocabularySize),
+  ProgramVolume=g.Key.ChildMethods.Average(m1 => m1.ProgramVolume),
+  DifficultyLevel=g.Key.ChildMethods.Average(m1 => m1.DifficultyLevel),
+  ProgramLevel=g.Key.ChildMethods.Average(m1 => m1.ProgramLevel),
+  EffortToImplement=g.Key.ChildMethods.Average(m1 => m1.EffortToImplement),
+  TimeToImplement=g.Key.ChildMethods.Average(m1 => m1.TimeToImplement),
+}
+
+
+from m in Methods
+join p in Projects
+on m.ParentProject.Name equals p.Name 
+group m by m.ParentProject into g 
+select new { g.Key,
+  NbLinesOfCode=g.Key.ChildMethods.Average(m1 => m1.NbLinesOfCode),
+  NbLinesOfComment=g.Key.ChildMethods.Average(m1 => m1.NbLinesOfComment),
+  NbFields=g.Key.NbFields,
+  NbMehods=g.Key.NbMethods,
+  NbParameters=g.Key.ChildMethods.Average(m1 => m1.NbParameters),
+  NbVariables=g.Key.ChildMethods.Average(m1 => m1.NbVariables),
+  NbMethodsCalled=g.Key.ChildMethods.Average(m1 => m1.NbMethodsCalled),
+  NbMethodsCallingMe=g.Key.ChildMethods.Average(m1 => m1.NbMethodsCallingMe),
+}
+
+
+====================================================================================
+
+
+from m in Methods
+join p in Projects
+on m.ParentProject.Name equals p.Name 
+group m by m.ParentProject into g 
+select new { g.Key,
+  CyclomaticComplexity=g.Key.ChildMethods.Sum(m1 => m1.CyclomaticComplexity),
+  MaintainabilityIndex=g.Key.ChildMethods.Sum(m1 => m1.MaintainabilityIndex),
+  NbUniqueOperands=g.Key.ChildMethods.Sum(m1 => m1.NbUniqueOperands),
+  NbOperands=g.Key.ChildMethods.Sum(m1 => m1.NbOperands),
+  NbUniqueOperators=g.Key.ChildMethods.Sum(m1 => m1.NbUniqueOperators),
+  NbOperators=g.Key.ChildMethods.Sum(m1 => m1.NbOperators),
+  ProgramLength=g.Key.ChildMethods.Sum(m1 => m1.ProgramLength),
+  VocabularySize=g.Key.ChildMethods.Sum(m1 => m1.VocabularySize),
+  ProgramVolume=g.Key.ChildMethods.Sum(m1 => m1.ProgramVolume),
+  DifficultyLevel=g.Key.ChildMethods.Sum(m1 => m1.DifficultyLevel),
+  ProgramLevel=g.Key.ChildMethods.Sum(m1 => m1.ProgramLevel),
+  EffortToImplement=g.Key.ChildMethods.Sum(m1 => m1.EffortToImplement),
+  TimeToImplement=g.Key.ChildMethods.Sum(m1 => m1.TimeToImplement),
+}
+
+
+from m in Methods
+join p in Projects
+on m.ParentProject.Name equals p.Name 
+group m by m.ParentProject into g 
+select new { g.Key,
+  NbLinesOfCode=g.Key.ChildMethods.Sum(m1 => m1.NbLinesOfCode),
+  NbLinesOfComment=g.Key.ChildMethods.Sum(m1 => m1.NbLinesOfComment),
+  NbFields=g.Key.NbFields,
+  NbMehods=g.Key.NbMethods,
+  NbParameters=g.Key.ChildMethods.Sum(m1 => m1.NbParameters),
+  NbVariables=g.Key.ChildMethods.Sum(m1 => m1.NbVariables),
+  NbMethodsCalled=g.Key.ChildMethods.Sum(m1 => m1.NbMethodsCalled),
+  NbMethodsCallingMe=g.Key.ChildMethods.Sum(m1 => m1.NbMethodsCallingMe),
+}
+
