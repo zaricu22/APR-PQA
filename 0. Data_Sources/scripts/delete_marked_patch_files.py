@@ -53,16 +53,16 @@ def delete_unavailable_version_folders(path):
         curr_folder_path = os.path.join(path, d)
         d4j_project_version = d.split('-')[2]
         buggy_folder_path = curr_folder_path.replace(d4j_project_version,'Buggy')
-        fixed_folder_path = curr_folder_path.replace(d4j_project_version,'Fixed')
-        repaired_folder_path = curr_folder_path.replace(d4j_project_version,'Repaired')
-        if os.path.exists(fixed_folder_path):
-            if os.path.exists(repaired_folder_path):
+        manual_folder_path = curr_folder_path.replace(d4j_project_version,'Manual')
+        auto_folder_path = curr_folder_path.replace(d4j_project_version,'Auto')
+        if os.path.exists(manual_folder_path):
+            if os.path.exists(auto_folder_path):
                 continue
 
         shutil.rmtree(buggy_folder_path, ignore_errors=True)
-        shutil.rmtree(fixed_folder_path, ignore_errors=True)
-        shutil.rmtree(repaired_folder_path, ignore_errors=True)
-        print(f"Deleted non-fixed/repaired folder: {folder_path}")
+        shutil.rmtree(manual_folder_path, ignore_errors=True)
+        shutil.rmtree(auto_folder_path, ignore_errors=True)
+        print(f"Deleted non-manual/auto folder: {folder_path}")
         
         
 print("\nDELETE EMPTY FOLDERS...\n")

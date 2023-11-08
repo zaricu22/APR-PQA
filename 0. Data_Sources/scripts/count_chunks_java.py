@@ -3,7 +3,7 @@ import subprocess
 import json
 import re
 
-# Specify full path to folder with separated projects by version (buggy, fixed, repaired)
+# Specify full path to folder with separated projects by version (buggy, manual, auto)
 work_folder = os.path.join(os.getcwd(), '..', 'Bugs.jar_Result_51_Packages')
 out_file_path = 'Output-file-name (Bugs.jar).json'
 
@@ -13,11 +13,11 @@ for root, dirs, files in os.walk(work_folder):
     for f in files:
         file_path_cmp = os.path.join(root, f)
         file_path_org = ""
-        if ('Repaired' in file_path_cmp or 'Fixed' in file_path_cmp) and '.java' in file_path_cmp:
-            if 'Repaired' in file_path_cmp:
-                file_path_org = file_path_cmp.replace('Repaired', 'Buggy')
-            if 'Fixed' in file_path_cmp:
-                file_path_org = file_path_cmp.replace('Fixed', 'Buggy')
+        if ('Auto' in file_path_cmp or 'Manual' in file_path_cmp) and '.java' in file_path_cmp:
+            if 'Auto' in file_path_cmp:
+                file_path_org = file_path_cmp.replace('Auto', 'Buggy')
+            if 'Manual' in file_path_cmp:
+                file_path_org = file_path_cmp.replace('Manual', 'Buggy')
             cmd = 'git diff --patch-with-raw'+" \""+file_path_org+"\" \""+file_path_cmp+"\""
             p1 = subprocess.run(cmd, shell=True, capture_output=True, text=True)
             if p1.returncode == 1:

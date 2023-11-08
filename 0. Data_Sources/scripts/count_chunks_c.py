@@ -2,7 +2,7 @@ import os
 import subprocess
 import re
 
-# Specify path to folder with separated projects by version (buggy, fixed, repaired)
+# Specify path to folder with separated projects by version (buggy, manual, auto)
 work_folder = os.path.join('..', 'ManyBugs_Result')
 
 
@@ -10,38 +10,38 @@ for d in os.listdir(work_folder):
     if 'buggy' in d:
         buggy_folder = os.path.join(work_folder, d)
         buggy_file = os.path.join(buggy_folder, os.listdir(buggy_folder)[0])
-        fixed_folder = buggy_folder.replace('buggy', 'fixed')
-        fixed_file = os.path.join(fixed_folder, os.listdir(fixed_folder)[0])
-        repaired_folder = buggy_folder.replace('buggy', 'repaired')
-        repaired_file = os.path.join(repaired_folder, os.listdir(repaired_folder)[0])
+        manual_folder = buggy_folder.replace('buggy', 'manual')
+        manual_file = os.path.join(manual_folder, os.listdir(manual_folder)[0])
+        auto_folder = buggy_folder.replace('buggy', 'auto')
+        auto_file = os.path.join(auto_folder, os.listdir(auto_folder)[0])
         
-        diff_fixed_command = 'diff '+"\""+buggy_file+"\" "+"\""+fixed_file+"\""
-        diff_fixed_proc = subprocess.run(diff_fixed_command, shell=True, capture_output=True, text=True)
-        out_fixed_proc = diff_fixed_proc.stdout
-        add_num_fixed = 0
-        for l in out_fixed_proc.splitlines():
+        diff_manual_command = 'diff '+"\""+buggy_file+"\" "+"\""+manual_file+"\""
+        diff_manual_proc = subprocess.run(diff_manual_command, shell=True, capture_output=True, text=True)
+        out_manual_proc = diff_manual_proc.stdout
+        add_num_manual = 0
+        for l in out_manual_proc.splitlines():
             if l.startswith('>'):
-                add_num_fixed += 1
-        remove_num_fixed = 0
-        for l in out_fixed_proc.splitlines():
+                add_num_manual += 1
+        remove_num_manual = 0
+        for l in out_manual_proc.splitlines():
             if l.startswith('<'):
-                remove_num_fixed += 1
-        chunks_num_fixed = len(re.findall(r"[0-9]+[a|d|c][0-9]+", out_fixed_proc))
-        print(os.path.basename(fixed_folder)+" "+str(add_num_fixed)+" "+str(remove_num_fixed)+" "+str(chunks_num_fixed))
+                remove_num_manual += 1
+        chunks_num_manual = len(re.findall(r"[0-9]+[a|d|c][0-9]+", out_manual_proc))
+        print(os.path.basename(manual_folder)+" "+str(add_num_manual)+" "+str(remove_num_manual)+" "+str(chunks_num_manual))
 
-        diff_repaired_command = 'diff '+"\""+buggy_file+"\" "+"\""+repaired_file+"\""
-        diff_repaired_proc = subprocess.run(diff_repaired_command, shell=True, capture_output=True, text=True)
-        out_repaired_proc = diff_repaired_proc.stdout
-        add_num_repaired = 0
-        for l in out_repaired_proc.splitlines():
+        diff_auto_command = 'diff '+"\""+buggy_file+"\" "+"\""+auto_file+"\""
+        diff_auto_proc = subprocess.run(diff_auto_command, shell=True, capture_output=True, text=True)
+        out_auto_proc = diff_auto_proc.stdout
+        add_num_auto = 0
+        for l in out_auto_proc.splitlines():
             if l.startswith('>'):
-                add_num_repaired += 1
-        remove_num_repaired = 0
-        for l in out_repaired_proc.splitlines():
+                add_num_auto += 1
+        remove_num_auto = 0
+        for l in out_auto_proc.splitlines():
             if l.startswith('<'):
-                remove_num_repaired += 1
-        chunks_num_repaired = len(re.findall(r"[0-9]+[a|d|c][0-9]+", out_repaired_proc))
-        print(os.path.basename(repaired_folder)+" "+str(add_num_repaired)+" "+str(remove_num_repaired)+" "+str(chunks_num_repaired))
+                remove_num_auto += 1
+        chunks_num_auto = len(re.findall(r"[0-9]+[a|d|c][0-9]+", out_auto_proc))
+        print(os.path.basename(auto_folder)+" "+str(add_num_auto)+" "+str(remove_num_auto)+" "+str(chunks_num_auto))
 
 
 
