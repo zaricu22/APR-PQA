@@ -174,7 +174,7 @@ if __name__ == "__main__":
     out_file_path = 'Output-file-name (ManyBugs).json'
 
     final_results = []
-    
+    i = 0
     for root, dirs, files in os.walk(work_folder):
         for f in files:
             file_path_cmp = os.path.join(root, f)
@@ -192,7 +192,6 @@ if __name__ == "__main__":
                     org_version = prefix+'buggy'+'\\'                
                 file_path_org = file_path_cmp.replace(cmp_version, org_version)
                 if file_path_cmp.rstrip().endswith('.java') or file_path_cmp.rstrip().endswith('.c'):
-##                print(file_path_cmp)
                     cmd = 'git diff --ignore-cr-at-eol --patch-with-raw'+" \""+file_path_org+"\" \""+file_path_cmp+"\""
                     p1 = subprocess.run(cmd, shell=True, capture_output=True, text=True)
                     if p1.returncode == 1:
@@ -200,7 +199,6 @@ if __name__ == "__main__":
                         final_results.append({'name': tool_name, 'add': total_added, 'rm': total_removed, 'upd': total_updated, 'mv': total_moved, 'chunk_num': chunk_count, 'lines': total_lines})
                     else:
                         final_results.append({'name': tool_name, 'add': 0, 'rm': 0, 'upd': 0, 'mv': 0, 'chunk_num': 0, 'lines': 0, })
-
 
     print(str(len(final_results)))
 
