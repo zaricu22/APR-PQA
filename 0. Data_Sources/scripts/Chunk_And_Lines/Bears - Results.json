@@ -1,0 +1,758 @@
+[
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_1_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_2_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_2_Manual",
+    "add": 23,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 23
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_4_Auto",
+    "add": 0,
+    "rm": 6,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-dungba88-libra-436514153-436524727_0_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bears-dungba88-libra-436514153-436524727_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 42,
+    "mv": 42,
+    "chunk_num": 1,
+    "lines": 52
+  },
+  {
+    "name": "Arja-Bears-dungba88-libra-436514153-436524727_1_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bears-dungba88-libra-436514153-436524727_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 42,
+    "mv": 42,
+    "chunk_num": 1,
+    "lines": 52
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_0_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_1_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_2_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_3_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_4_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-julianps-modelmapper-module-vavr-441307573-461240331_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_0_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_0_Manual",
+    "add": 7,
+    "rm": 0,
+    "upd": 8,
+    "mv": 6,
+    "chunk_num": 4,
+    "lines": 17
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_1_Auto",
+    "add": 1,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_1_Manual",
+    "add": 7,
+    "rm": 0,
+    "upd": 8,
+    "mv": 6,
+    "chunk_num": 4,
+    "lines": 17
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_2_Auto",
+    "add": 0,
+    "rm": 6,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_2_Manual",
+    "add": 7,
+    "rm": 0,
+    "upd": 8,
+    "mv": 6,
+    "chunk_num": 4,
+    "lines": 17
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_3_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_3_Manual",
+    "add": 7,
+    "rm": 0,
+    "upd": 8,
+    "mv": 6,
+    "chunk_num": 4,
+    "lines": 17
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_4_Auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_4_Manual",
+    "add": 7,
+    "rm": 0,
+    "upd": 8,
+    "mv": 6,
+    "chunk_num": 4,
+    "lines": 17
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 6
+  },
+  {
+    "name": "Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_0_Auto",
+    "add": 0,
+    "rm": 12,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 12
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_1_Auto",
+    "add": 0,
+    "rm": 12,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 12
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_2_Auto",
+    "add": 0,
+    "rm": 12,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 12
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_3_Auto",
+    "add": 0,
+    "rm": 12,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 12
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_4_Auto",
+    "add": 0,
+    "rm": 12,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 12
+  },
+  {
+    "name": "Arja-Bears-traccar-traccar-255051210-255052458_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto",
+    "add": 1,
+    "rm": 1,
+    "upd": 11,
+    "mv": 6,
+    "chunk_num": 8,
+    "lines": 16
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Auto",
+    "add": 16,
+    "rm": 9,
+    "upd": 9,
+    "mv": 9,
+    "chunk_num": 11,
+    "lines": 39
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Auto",
+    "add": 2,
+    "rm": 2,
+    "upd": 7,
+    "mv": 3,
+    "chunk_num": 8,
+    "lines": 13
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 4,
+    "mv": 3,
+    "chunk_num": 6,
+    "lines": 9
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Auto",
+    "add": 5,
+    "rm": 2,
+    "upd": 9,
+    "mv": 5,
+    "chunk_num": 7,
+    "lines": 20
+  },
+  {
+    "name": "GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Manual",
+    "add": 23,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 23
+  },
+  {
+    "name": "Kali-Bears-dungba88-libra-436514153-436524727_0_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-Bears-dungba88-libra-436514153-436524727_0_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 36,
+    "mv": 36,
+    "chunk_num": 1,
+    "lines": 47
+  },
+  {
+    "name": "Kali-Bears-julianps-modelmapper-module-vavr-441307573-461240331_0_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Kali-Bears-julianps-modelmapper-module-vavr-441307573-461240331_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "Kali-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-Bears-traccar-traccar-255051210-255052458_0_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Kali-Bears-traccar-traccar-255051210-255052458_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol-Bears-vkostyukov-la4j-414793864-436911083_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Nopol-Bears-vkostyukov-la4j-414793864-436911083_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Auto",
+    "add": 1,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 3,
+    "lines": 5
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  }
+]

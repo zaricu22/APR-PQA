@@ -1,0 +1,9470 @@
+[
+  {
+    "name": "ACS_Chart-19_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Chart-19_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "ACS_Lang-24_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Lang-24_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Lang-35_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Lang-35_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Lang-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "ACS_Math-25_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-25_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "ACS_Math-28_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "ACS_Math-35_Auto",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "ACS_Math-35_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-3_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-3_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "ACS_Math-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-5_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-61_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "ACS_Math-61_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-73_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-73_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "ACS_Math-81_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "ACS_Math-82_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-85_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-89_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-89_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "ACS_Math-90_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Math-90_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "ACS_Math-93_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "ACS_Math-93_Manual",
+    "add": 8,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 10
+  },
+  {
+    "name": "ACS_Math-97_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-97_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 16
+  },
+  {
+    "name": "ACS_Math-99_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ACS_Math-99_Manual",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "ACS_Time-15_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ACS_Time-15_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Chart-12_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Chart-12_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Chart-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Chart-1_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Chart-3_Auto",
+    "add": 2,
+    "rm": 9,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 15
+  },
+  {
+    "name": "ARJA_Chart-3_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Chart-5_Auto",
+    "add": 0,
+    "rm": 8,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 1,
+    "lines": 11
+  },
+  {
+    "name": "ARJA_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "ARJA_Chart-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Chart-7_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Closure-112_Auto",
+    "add": 0,
+    "rm": 40,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 43
+  },
+  {
+    "name": "ARJA_Closure-112_Manual",
+    "add": 5,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "ARJA_Closure-114_Auto",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "ARJA_Closure-114_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Closure-115_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "ARJA_Closure-117_Auto",
+    "add": 0,
+    "rm": 28,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 28
+  },
+  {
+    "name": "ARJA_Closure-117_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 12,
+    "chunk_num": 3,
+    "lines": 24
+  },
+  {
+    "name": "ARJA_Closure-124_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Closure-124_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Closure-125_Auto",
+    "add": 0,
+    "rm": 6,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "ARJA_Closure-125_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Closure-21_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "ARJA_Closure-22_Auto",
+    "add": 0,
+    "rm": 32,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 32
+  },
+  {
+    "name": "ARJA_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "ARJA_Closure-33_Auto",
+    "add": 0,
+    "rm": 22,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 22
+  },
+  {
+    "name": "ARJA_Closure-33_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Closure-3_Auto",
+    "add": 0,
+    "rm": 13,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 14
+  },
+  {
+    "name": "ARJA_Closure-3_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 8
+  },
+  {
+    "name": "ARJA_Closure-55_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Closure-55_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Closure-86_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Closure-86_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Closure-88_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Closure-88_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "ARJA_Closure-8_Auto",
+    "add": 0,
+    "rm": 36,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 36
+  },
+  {
+    "name": "ARJA_Closure-8_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Lang-16_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Lang-16_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Lang-20_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Lang-20_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Lang-43_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Lang-43_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Lang-46_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Lang-46_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 9,
+    "lines": 10
+  },
+  {
+    "name": "ARJA_Lang-50_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 2,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 7
+  },
+  {
+    "name": "ARJA_Lang-50_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 4,
+    "mv": 6,
+    "chunk_num": 6,
+    "lines": 12
+  },
+  {
+    "name": "ARJA_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Lang-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "ARJA_Math-28_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Math-35_Auto",
+    "add": 4,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "ARJA_Math-35_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Math-40_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Math-40_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "ARJA_Math-49_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 3,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Math-49_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Math-50_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Math-53_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Math-53_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Math-56_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "ARJA_Math-56_Manual",
+    "add": 0,
+    "rm": 6,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "ARJA_Math-58_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-58_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-80_Auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 7
+  },
+  {
+    "name": "ARJA_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-81_Auto",
+    "add": 0,
+    "rm": 36,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 36
+  },
+  {
+    "name": "ARJA_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "ARJA_Math-84_Auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "ARJA_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "ARJA_Math-85_Auto",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "ARJA_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "ARJA_Math-88_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "ARJA_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "ARJA_Math-95_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "ARJA_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Chart-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-11_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-19_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Chart-19_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "AVATAR_Chart-1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-24_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-24_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-25_Auto",
+    "add": 0,
+    "rm": 43,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 43
+  },
+  {
+    "name": "AVATAR_Chart-25_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 6,
+    "lines": 14
+  },
+  {
+    "name": "AVATAR_Chart-26_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Chart-26_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Chart-4_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Chart-4_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Chart-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "AVATAR_Chart-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Chart-7_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Closure-108_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-108_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Closure-115_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "AVATAR_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "AVATAR_Closure-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-11_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Closure-21_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "AVATAR_Closure-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "AVATAR_Closure-2_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Closure-2_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Closure-38_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-45_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Closure-45_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 6
+  },
+  {
+    "name": "AVATAR_Closure-46_Auto",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "AVATAR_Closure-46_Manual",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "AVATAR_Closure-48_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-48_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 4,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "AVATAR_Closure-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-62_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-66_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-66_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Closure-73_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Closure-73_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-10_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "AVATAR_Lang-10_Manual",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "AVATAR_Lang-13_Auto",
+    "add": 0,
+    "rm": 17,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 17
+  },
+  {
+    "name": "AVATAR_Lang-13_Manual",
+    "add": 19,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 19
+  },
+  {
+    "name": "AVATAR_Lang-20_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-20_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Lang-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-22_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "AVATAR_Lang-27_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-27_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Lang-39_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-39_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Lang-51_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Lang-51_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-57_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-58_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "AVATAR_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "AVATAR_Lang-6_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-6_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Lang-7_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "AVATAR_Math-104_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-104_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-28_Auto",
+    "add": 0,
+    "rm": 14,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 14
+  },
+  {
+    "name": "AVATAR_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Math-33_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-50_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Math-57_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-62_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Math-80_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-81_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Math-82_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-84_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "AVATAR_Math-85_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-88_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "AVATAR_Math-89_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "AVATAR_Math-89_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Math-95_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Mockito-29_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "AVATAR_Mockito-29_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Mockito-38_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "AVATAR_Mockito-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "AVATAR_Time-18_Auto",
+    "add": 0,
+    "rm": 29,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 29
+  },
+  {
+    "name": "AVATAR_Time-18_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 12
+  },
+  {
+    "name": "DynaMoth_Chart-13_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 7,
+    "mv": 7,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "DynaMoth_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Chart-1_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Chart-25_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 7,
+    "mv": 7,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "DynaMoth_Chart-25_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 6,
+    "lines": 14
+  },
+  {
+    "name": "DynaMoth_Chart-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "DynaMoth_Lang-46_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Lang-46_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 9,
+    "lines": 10
+  },
+  {
+    "name": "DynaMoth_Lang-51_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 3,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Lang-51_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Lang-55_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Lang-55_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "DynaMoth_Lang-58_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "DynaMoth_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "DynaMoth_Lang-63_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "DynaMoth_Math-101_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "DynaMoth_Math-101_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "DynaMoth_Math-105_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Math-105_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-20_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-20_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "DynaMoth_Math-28_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Math-32_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-32_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-41_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 8,
+    "mv": 8,
+    "chunk_num": 1,
+    "lines": 10
+  },
+  {
+    "name": "DynaMoth_Math-41_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-49_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "DynaMoth_Math-49_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Math-50_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Math-80_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 5,
+    "mv": 6,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "DynaMoth_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-81_Auto",
+    "add": 1,
+    "rm": 2,
+    "upd": 5,
+    "mv": 15,
+    "chunk_num": 4,
+    "lines": 27
+  },
+  {
+    "name": "DynaMoth_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Math-82_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-85_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 7,
+    "mv": 7,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "DynaMoth_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth_Math-88_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "DynaMoth_Math-8_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth_Math-8_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "DynaMoth_Math-97_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 6,
+    "mv": 5,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "DynaMoth_Math-97_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 16
+  },
+  {
+    "name": "FixMiner_Chart-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-11_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-12_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-12_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-17_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-17_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Chart-19_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "FixMiner_Chart-19_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "FixMiner_Chart-1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-24_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-24_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-26_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "FixMiner_Chart-26_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Chart-3_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-3_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Chart-4_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "FixMiner_Chart-4_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Chart-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Chart-7_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Closure-10_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-10_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-115_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "FixMiner_Closure-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Closure-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Closure-19_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Closure-19_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Closure-2_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Closure-2_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "FixMiner_Closure-38_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-46_Auto",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "FixMiner_Closure-46_Manual",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "FixMiner_Closure-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-62_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-73_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Closure-73_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-10_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "FixMiner_Lang-10_Manual",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "FixMiner_Lang-19_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-19_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 5,
+    "lines": 9
+  },
+  {
+    "name": "FixMiner_Lang-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-22_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "FixMiner_Lang-56_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-56_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "FixMiner_Lang-57_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-58_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "FixMiner_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "FixMiner_Lang-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "FixMiner_Math-20_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-20_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Math-28_Auto",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "FixMiner_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "FixMiner_Math-30_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-30_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-33_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-34_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-34_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-35_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-35_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Math-50_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "FixMiner_Math-57_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-63_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-64_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Math-64_Manual",
+    "add": 15,
+    "rm": 1,
+    "upd": 3,
+    "mv": 4,
+    "chunk_num": 13,
+    "lines": 27
+  },
+  {
+    "name": "FixMiner_Math-68_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 7,
+    "chunk_num": 2,
+    "lines": 13
+  },
+  {
+    "name": "FixMiner_Math-68_Manual",
+    "add": 10,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 9,
+    "lines": 12
+  },
+  {
+    "name": "FixMiner_Math-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-75_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-75_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-79_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Math-79_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "FixMiner_Math-80_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-81_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "FixMiner_Math-82_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-84_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "FixMiner_Math-85_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-88_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "FixMiner_Math-95_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "FixMiner_Math-97_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Math-97_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 16
+  },
+  {
+    "name": "FixMiner_Mockito-29_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "FixMiner_Mockito-29_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "FixMiner_Mockito-38_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "FixMiner_Mockito-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Chart-12_Auto",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "GenProg-A_Chart-12_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Chart-13_Auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 4,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 10
+  },
+  {
+    "name": "GenProg-A_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Chart-1_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "GenProg-A_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Chart-3_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "GenProg-A_Chart-3_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "GenProg-A_Closure-112_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "GenProg-A_Closure-112_Manual",
+    "add": 5,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "GenProg-A_Closure-115_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "GenProg-A_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "GenProg-A_Closure-117_Auto",
+    "add": 0,
+    "rm": 28,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 28
+  },
+  {
+    "name": "GenProg-A_Closure-117_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 12,
+    "chunk_num": 3,
+    "lines": 24
+  },
+  {
+    "name": "GenProg-A_Closure-124_Auto",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "GenProg-A_Closure-124_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "GenProg-A_Closure-125_Auto",
+    "add": 0,
+    "rm": 6,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-A_Closure-125_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Closure-21_Auto",
+    "add": 0,
+    "rm": 8,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "GenProg-A_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-A_Closure-22_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 3,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "GenProg-A_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "GenProg-A_Closure-33_Auto",
+    "add": 0,
+    "rm": 22,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 22
+  },
+  {
+    "name": "GenProg-A_Closure-33_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "GenProg-A_Closure-3_Auto",
+    "add": 0,
+    "rm": 14,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 14
+  },
+  {
+    "name": "GenProg-A_Closure-3_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 8
+  },
+  {
+    "name": "GenProg-A_Closure-55_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Closure-55_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "GenProg-A_Closure-86_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "GenProg-A_Closure-86_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Closure-88_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "GenProg-A_Closure-88_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-A_Lang-43_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "GenProg-A_Lang-43_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "GenProg-A_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Lang-63_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "GenProg-A_Lang-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "GenProg-A_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-A_Math-28_Auto",
+    "add": 0,
+    "rm": 11,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 12
+  },
+  {
+    "name": "GenProg-A_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "GenProg-A_Math-50_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "GenProg-A_Math-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-80_Auto",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-A_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-81_Auto",
+    "add": 0,
+    "rm": 32,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 33
+  },
+  {
+    "name": "GenProg-A_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "GenProg-A_Math-82_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-85_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 5,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "GenProg-A_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-A_Math-95_Auto",
+    "add": 5,
+    "rm": 1,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "GenProg-A_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Chart-1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Chart-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "Kali-A_Closure-10_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "Kali-A_Closure-10_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-112_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-112_Manual",
+    "add": 5,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "Kali-A_Closure-113_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-113_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-115_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "Kali-A_Closure-124_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Closure-124_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Closure-15_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-15_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Closure-1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-1_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Closure-21_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "Kali-A_Closure-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "Kali-A_Closure-2_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-2_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Closure-33_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-33_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Closure-38_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-3_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-3_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 8
+  },
+  {
+    "name": "Kali-A_Closure-46_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-46_Manual",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "Kali-A_Closure-4_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Closure-51_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-51_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-55_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-55_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Closure-66_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-66_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Closure-75_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Closure-75_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Closure-7_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Closure-7_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 5
+  },
+  {
+    "name": "Kali-A_Closure-86_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Closure-86_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Lang-58_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Lang-63_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Kali-A_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "Kali-A_Math-28_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Math-31_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Math-31_Manual",
+    "add": 1,
+    "rm": 21,
+    "upd": 12,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 34
+  },
+  {
+    "name": "Kali-A_Math-32_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-32_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-49_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-49_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Math-50_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Math-80_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-81_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Kali-A_Math-84_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "Kali-A_Math-85_Auto",
+    "add": 0,
+    "rm": 6,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "Kali-A_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-A_Math-95_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-A_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Chart-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-17_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-17_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Chart-19_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Chart-19_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "kPAR_Chart-1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-26_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Chart-26_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Chart-3_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-3_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Chart-4_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Chart-4_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Chart-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "kPAR_Chart-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-7_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Chart-8_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Chart-8_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-10_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-10_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-115_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "kPAR_Closure-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-11_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Closure-125_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-125_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-21_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "kPAR_Closure-22_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "kPAR_Closure-2_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Closure-2_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Closure-35_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-35_Manual",
+    "add": 0,
+    "rm": 13,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 15
+  },
+  {
+    "name": "kPAR_Closure-38_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-40_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-40_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Closure-46_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-46_Manual",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "kPAR_Closure-4_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Closure-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-62_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-73_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Closure-73_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-10_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-10_Manual",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "kPAR_Lang-16_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-16_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-18_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-18_Manual",
+    "add": 1,
+    "rm": 2,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "kPAR_Lang-20_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-20_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Lang-21_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-21_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-22_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "kPAR_Lang-24_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-24_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-27_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-27_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Lang-41_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-41_Manual",
+    "add": 19,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 8,
+    "lines": 21
+  },
+  {
+    "name": "kPAR_Lang-43_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-43_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-44_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Lang-44_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Lang-45_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-45_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Lang-51_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-51_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-53_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-53_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Lang-57_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Lang-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-58_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "kPAR_Lang-6_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-6_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "kPAR_Math-104_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-104_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-15_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-15_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "kPAR_Math-40_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-40_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "kPAR_Math-42_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-42_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Math-43_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-43_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "kPAR_Math-50_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Math-58_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-58_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-62_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Math-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-63_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-75_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-75_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-7_Manual",
+    "add": 3,
+    "rm": 4,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 14
+  },
+  {
+    "name": "kPAR_Math-80_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-81_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Math-82_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-84_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "kPAR_Math-85_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-88_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "kPAR_Math-89_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "kPAR_Math-89_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "kPAR_Math-8_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "kPAR_Math-8_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Nopol_Chart-13_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 7,
+    "mv": 7,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "Nopol_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Chart-17_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Chart-17_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Nopol_Chart-25_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 7,
+    "mv": 7,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "Nopol_Chart-25_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 6,
+    "lines": 14
+  },
+  {
+    "name": "Nopol_Chart-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "Nopol_Chart-9_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Chart-9_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Lang-44_Auto",
+    "add": 1,
+    "rm": 1,
+    "upd": 5,
+    "mv": 6,
+    "chunk_num": 3,
+    "lines": 10
+  },
+  {
+    "name": "Nopol_Lang-44_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Lang-46_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Lang-46_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 9,
+    "lines": 10
+  },
+  {
+    "name": "Nopol_Lang-51_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 3,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Lang-51_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Lang-53_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 3,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "Nopol_Lang-53_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Lang-55_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Lang-55_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Nopol_Lang-58_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "Nopol_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Nopol_Math-105_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-105_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Math-18_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-18_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 4,
+    "mv": 0,
+    "chunk_num": 5,
+    "lines": 6
+  },
+  {
+    "name": "Nopol_Math-20_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-20_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "Nopol_Math-33_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Math-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Math-42_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 7,
+    "mv": 7,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "Nopol_Math-42_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-49_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "Nopol_Math-49_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Math-50_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 3,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "Nopol_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Math-69_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 5,
+    "mv": 6,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "Nopol_Math-69_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Math-7_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-7_Manual",
+    "add": 3,
+    "rm": 4,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 14
+  },
+  {
+    "name": "Nopol_Math-80_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 4,
+    "mv": 4,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "Nopol_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Math-81_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Math-82_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Math-85_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 6,
+    "mv": 5,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "Nopol_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Math-87_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-87_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Nopol_Math-88_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "Nopol_Time-14_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Nopol_Time-14_Manual",
+    "add": 5,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "RSRepair-A_Chart-12_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "RSRepair-A_Chart-12_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Chart-1_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Chart-5_Auto",
+    "add": 0,
+    "rm": 8,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 10
+  },
+  {
+    "name": "RSRepair-A_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "RSRepair-A_Closure-10_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Closure-10_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-112_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Closure-112_Manual",
+    "add": 5,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "RSRepair-A_Closure-115_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "RSRepair-A_Closure-117_Auto",
+    "add": 0,
+    "rm": 28,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 28
+  },
+  {
+    "name": "RSRepair-A_Closure-117_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 12,
+    "chunk_num": 3,
+    "lines": 24
+  },
+  {
+    "name": "RSRepair-A_Closure-120_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-120_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Closure-121_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-121_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Closure-124_Auto",
+    "add": 0,
+    "rm": 9,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 10
+  },
+  {
+    "name": "RSRepair-A_Closure-124_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Closure-125_Auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "RSRepair-A_Closure-125_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-21_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-A_Closure-22_Auto",
+    "add": 0,
+    "rm": 14,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 14
+  },
+  {
+    "name": "RSRepair-A_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "RSRepair-A_Closure-33_Auto",
+    "add": 0,
+    "rm": 22,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 22
+  },
+  {
+    "name": "RSRepair-A_Closure-33_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Closure-3_Auto",
+    "add": 0,
+    "rm": 13,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 14
+  },
+  {
+    "name": "RSRepair-A_Closure-3_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 8
+  },
+  {
+    "name": "RSRepair-A_Closure-55_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-55_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Closure-75_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-75_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "RSRepair-A_Closure-86_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "RSRepair-A_Closure-86_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Closure-88_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "RSRepair-A_Closure-88_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "RSRepair-A_Lang-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-13_Manual",
+    "add": 19,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-A_Lang-16_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-16_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-43_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-43_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-46_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Lang-46_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 9,
+    "lines": 10
+  },
+  {
+    "name": "RSRepair-A_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-63_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "RSRepair-A_Lang-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "RSRepair-A_Math-28_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "RSRepair-A_Math-28_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "RSRepair-A_Math-33_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Math-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-40_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Math-40_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "RSRepair-A_Math-50_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "RSRepair-A_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "RSRepair-A_Math-53_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Math-53_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Math-58_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-58_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-5_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-80_Auto",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "RSRepair-A_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-81_Auto",
+    "add": 0,
+    "rm": 21,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 21
+  },
+  {
+    "name": "RSRepair-A_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "RSRepair-A_Math-82_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-84_Auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 6
+  },
+  {
+    "name": "RSRepair-A_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "RSRepair-A_Math-85_Auto",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 9
+  },
+  {
+    "name": "RSRepair-A_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-A_Math-88_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-A_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "RSRepair-A_Math-95_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-A_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "SimFix_Chart-12_Auto",
+    "add": 10,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 10
+  },
+  {
+    "name": "SimFix_Chart-12_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Chart-1_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Chart-22_Auto",
+    "add": 34,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 6,
+    "lines": 34
+  },
+  {
+    "name": "SimFix_Chart-22_Manual",
+    "add": 30,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 33
+  },
+  {
+    "name": "SimFix_Chart-25_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Chart-25_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 6,
+    "lines": 14
+  },
+  {
+    "name": "SimFix_Closure-115_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Closure-11_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Closure-11_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Closure-125_Auto",
+    "add": 10,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 10
+  },
+  {
+    "name": "SimFix_Closure-125_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Closure-14_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Closure-14_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Closure-19_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Closure-19_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Closure-21_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "SimFix_Closure-22_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "SimFix_Closure-38_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Closure-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Closure-46_Auto",
+    "add": 14,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 14
+  },
+  {
+    "name": "SimFix_Closure-46_Manual",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "SimFix_Closure-57_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Closure-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Closure-62_Auto",
+    "add": 15,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 15
+  },
+  {
+    "name": "SimFix_Closure-62_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Closure-6_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Closure-6_Manual",
+    "add": 0,
+    "rm": 8,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Closure-73_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Closure-73_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Lang-12_Auto",
+    "add": 14,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 14
+  },
+  {
+    "name": "SimFix_Lang-12_Manual",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Lang-16_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Lang-16_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Lang-1_Auto",
+    "add": 11,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Lang-1_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Lang-27_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Lang-27_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "SimFix_Lang-33_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Lang-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Lang-39_Auto",
+    "add": 13,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 13
+  },
+  {
+    "name": "SimFix_Lang-39_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "SimFix_Lang-41_Auto",
+    "add": 16,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 16
+  },
+  {
+    "name": "SimFix_Lang-41_Manual",
+    "add": 19,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 8,
+    "lines": 21
+  },
+  {
+    "name": "SimFix_Lang-43_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Lang-43_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Lang-45_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Lang-45_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "SimFix_Lang-50_Auto",
+    "add": 20,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 20
+  },
+  {
+    "name": "SimFix_Lang-50_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 4,
+    "mv": 6,
+    "chunk_num": 6,
+    "lines": 12
+  },
+  {
+    "name": "SimFix_Lang-58_Auto",
+    "add": 11,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Lang-60_Auto",
+    "add": 18,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 18
+  },
+  {
+    "name": "SimFix_Lang-60_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Lang-61_Auto",
+    "add": 12,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 12
+  },
+  {
+    "name": "SimFix_Lang-61_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Lang-63_Auto",
+    "add": 11,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "SimFix_Math-33_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Math-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-35_Auto",
+    "add": 18,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 18
+  },
+  {
+    "name": "SimFix_Math-35_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Math-41_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Math-41_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-43_Auto",
+    "add": 14,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 14
+  },
+  {
+    "name": "SimFix_Math-43_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "SimFix_Math-50_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "SimFix_Math-53_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Math-53_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "SimFix_Math-57_Auto",
+    "add": 12,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 12
+  },
+  {
+    "name": "SimFix_Math-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-59_Auto",
+    "add": 5,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "SimFix_Math-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-5_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Math-5_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-63_Auto",
+    "add": 5,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "SimFix_Math-63_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-69_Auto",
+    "add": 11,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Math-69_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-70_Auto",
+    "add": 5,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "SimFix_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-71_Auto",
+    "add": 11,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "SimFix_Math-71_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "SimFix_Math-72_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Math-72_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Math-73_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Math-73_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "SimFix_Math-75_Auto",
+    "add": 5,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "SimFix_Math-75_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-79_Auto",
+    "add": 10,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 10
+  },
+  {
+    "name": "SimFix_Math-79_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "SimFix_Math-80_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-81_Auto",
+    "add": 23,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 23
+  },
+  {
+    "name": "SimFix_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "SimFix_Math-82_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "SimFix_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-84_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "SimFix_Math-85_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "SimFix_Math-8_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "SimFix_Math-8_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Chart-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-11_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-12_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-12_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-19_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Chart-19_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "TBar_Chart-1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-20_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-20_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-24_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-24_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-25_Auto",
+    "add": 0,
+    "rm": 43,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 43
+  },
+  {
+    "name": "TBar_Chart-25_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 6,
+    "lines": 14
+  },
+  {
+    "name": "TBar_Chart-26_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Chart-26_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Chart-3_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Chart-3_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Chart-4_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Chart-4_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Chart-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-5_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "TBar_Chart-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-7_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Chart-8_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-8_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-9_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Chart-9_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-102_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Closure-102_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-10_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-10_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-115_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-115_Manual",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "TBar_Closure-117_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 13,
+    "chunk_num": 2,
+    "lines": 26
+  },
+  {
+    "name": "TBar_Closure-117_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 12,
+    "chunk_num": 3,
+    "lines": 24
+  },
+  {
+    "name": "TBar_Closure-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-11_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-13_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-13_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-19_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-19_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-21_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-21_Manual",
+    "add": 0,
+    "rm": 17,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "TBar_Closure-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-22_Manual",
+    "add": 0,
+    "rm": 23,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 5,
+    "lines": 26
+  },
+  {
+    "name": "TBar_Closure-2_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Closure-2_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Closure-35_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-35_Manual",
+    "add": 0,
+    "rm": 13,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 15
+  },
+  {
+    "name": "TBar_Closure-38_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-40_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-40_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Closure-46_Auto",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "TBar_Closure-46_Manual",
+    "add": 0,
+    "rm": 16,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 16
+  },
+  {
+    "name": "TBar_Closure-4_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-62_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-66_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-66_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Closure-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-73_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Closure-73_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-10_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 7
+  },
+  {
+    "name": "TBar_Lang-10_Manual",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 9
+  },
+  {
+    "name": "TBar_Lang-13_Auto",
+    "add": 0,
+    "rm": 17,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 17
+  },
+  {
+    "name": "TBar_Lang-13_Manual",
+    "add": 19,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 19
+  },
+  {
+    "name": "TBar_Lang-18_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-18_Manual",
+    "add": 1,
+    "rm": 2,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "TBar_Lang-20_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-20_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Lang-22_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-22_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "TBar_Lang-24_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-24_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-26_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-26_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-27_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-27_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Lang-33_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Lang-33_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-39_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Lang-39_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Lang-41_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-41_Manual",
+    "add": 19,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 8,
+    "lines": 21
+  },
+  {
+    "name": "TBar_Lang-43_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-43_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-44_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Lang-44_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Lang-45_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-45_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Lang-47_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Lang-47_Manual",
+    "add": 6,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "TBar_Lang-50_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-50_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 4,
+    "mv": 6,
+    "chunk_num": 6,
+    "lines": 12
+  },
+  {
+    "name": "TBar_Lang-51_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-51_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-57_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-58_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Lang-58_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Lang-59_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-59_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-60_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-60_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Lang-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Lang-63_Manual",
+    "add": 2,
+    "rm": 19,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 22
+  },
+  {
+    "name": "TBar_Lang-6_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-6_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-7_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Lang-7_Manual",
+    "add": 2,
+    "rm": 2,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "TBar_Math-11_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-11_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-15_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-15_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Math-2_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Math-2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-50_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-50_Manual",
+    "add": 0,
+    "rm": 4,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Math-52_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-52_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Math-57_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-57_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-58_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-58_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-5_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-5_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-62_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-62_Manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Math-63_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-63_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-65_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-65_Manual",
+    "add": 0,
+    "rm": 5,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "TBar_Math-70_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-70_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-75_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-75_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-79_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Math-79_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Math-80_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-80_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-81_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-81_Manual",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Math-82_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-82_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-84_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-84_Manual",
+    "add": 9,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "TBar_Math-85_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-85_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-88_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-88_Manual",
+    "add": 4,
+    "rm": 5,
+    "upd": 0,
+    "mv": 1,
+    "chunk_num": 4,
+    "lines": 11
+  },
+  {
+    "name": "TBar_Math-89_Auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "TBar_Math-89_Manual",
+    "add": 4,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Math-8_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-8_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "TBar_Math-95_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-95_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Math-96_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Math-96_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Mockito-26_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Mockito-26_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Mockito-29_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "TBar_Mockito-29_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "TBar_Mockito-38_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "TBar_Mockito-38_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  }
+]

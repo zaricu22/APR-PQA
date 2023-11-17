@@ -1,0 +1,920 @@
+[
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_0_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_0_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_1_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_1_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_2_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_2_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_3_Auto",
+    "add": 4,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 8
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_3_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_4_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-2123f780_4_Manual",
+    "add": 3,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_0_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_0_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_1_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_1_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_2_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_2_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_3_Auto",
+    "add": 0,
+    "rm": 2,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 4
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_3_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_4_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-596ccd59_4_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_0_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 3,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 15
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_0_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_1_Auto",
+    "add": 11,
+    "rm": 0,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 3,
+    "lines": 16
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_1_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_2_Auto",
+    "add": 9,
+    "rm": 0,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 14
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_2_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_3_Auto",
+    "add": 7,
+    "rm": 0,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 2,
+    "lines": 11
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_3_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_4_Auto",
+    "add": 7,
+    "rm": 1,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 3,
+    "lines": 12
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-69273dca_4_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-a06a1584_0_Auto",
+    "add": 0,
+    "rm": 7,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-a06a1584_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 7
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-a06a1584_1_Auto",
+    "add": 2,
+    "rm": 3,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 8
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-a06a1584_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 7
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-a06a1584_2_Auto",
+    "add": 5,
+    "rm": 4,
+    "upd": 4,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 16
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-a06a1584_2_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 7
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-e2dc384d_1_Auto",
+    "add": 1,
+    "rm": 2,
+    "upd": 2,
+    "mv": 2,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-e2dc384d_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-e2dc384d_4_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 3,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "Arja-Bugs.jar-Commons-Math-e2dc384d_4_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "Arja-Bugs.jar-Jackrabbit-Oak-ffa818f3_1_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Arja-Bugs.jar-Jackrabbit-Oak-ffa818f3_1_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-0d057fc6_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-0d057fc6_0_Manual",
+    "add": 0,
+    "rm": 2,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 4,
+    "lines": 4
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-49444ee6_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 3,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-49444ee6_0_Manual",
+    "add": 11,
+    "rm": 0,
+    "upd": 18,
+    "mv": 0,
+    "chunk_num": 21,
+    "lines": 29
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-b01fcc31_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 3,
+    "mv": 3,
+    "chunk_num": 1,
+    "lines": 5
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-b01fcc31_0_Manual",
+    "add": 1,
+    "rm": 1,
+    "upd": 3,
+    "mv": 0,
+    "chunk_num": 5,
+    "lines": 5
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-dd6cefb0_0_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-dd6cefb0_0_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-ebc61de9_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "DynaMoth-Bugs.jar-Commons-Math-ebc61de9_0_Manual",
+    "add": 0,
+    "rm": 7,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 8
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_0_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 3,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_0_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_1_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 4,
+    "mv": 2,
+    "chunk_num": 3,
+    "lines": 8
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_1_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_2_Auto",
+    "add": 0,
+    "rm": 9,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 9
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_2_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_3_Auto",
+    "add": 0,
+    "rm": 4,
+    "upd": 3,
+    "mv": 2,
+    "chunk_num": 5,
+    "lines": 9
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_3_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_4_Auto",
+    "add": 2,
+    "rm": 10,
+    "upd": 3,
+    "mv": 3,
+    "chunk_num": 7,
+    "lines": 18
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-596ccd59_4_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-69273dca_1_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 10
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-69273dca_1_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_0_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 4,
+    "mv": 2,
+    "chunk_num": 4,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_0_Manual",
+    "add": 3,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_1_Auto",
+    "add": 7,
+    "rm": 2,
+    "upd": 13,
+    "mv": 9,
+    "chunk_num": 5,
+    "lines": 23
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_1_Manual",
+    "add": 3,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_2_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 1,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_2_Manual",
+    "add": 3,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_3_Auto",
+    "add": 4,
+    "rm": 2,
+    "upd": 11,
+    "mv": 8,
+    "chunk_num": 5,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_3_Manual",
+    "add": 3,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_4_Auto",
+    "add": 4,
+    "rm": 2,
+    "upd": 9,
+    "mv": 6,
+    "chunk_num": 3,
+    "lines": 15
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-8e5867ed_4_Manual",
+    "add": 3,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 6
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-9e0c5ad4_1_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 20,
+    "mv": 5,
+    "chunk_num": 3,
+    "lines": 23
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-9e0c5ad4_1_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-a06a1584_3_Auto",
+    "add": 0,
+    "rm": 19,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 19
+  },
+  {
+    "name": "GenProg-Bugs.jar-Commons-Math-a06a1584_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 7
+  },
+  {
+    "name": "Kali-Bugs.jar-Commons-Math-596ccd59_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-Bugs.jar-Commons-Math-596ccd59_0_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "Kali-Bugs.jar-Commons-Math-a06a1584_0_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "Kali-Bugs.jar-Commons-Math-a06a1584_0_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 7
+  },
+  {
+    "name": "Kali-Bugs.jar-Jackrabbit-Oak-ffa818f3_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Kali-Bugs.jar-Jackrabbit-Oak-ffa818f3_0_Manual",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "Nopol-Bugs.jar-Commons-Math-bfbb156d_0_Auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 19,
+    "mv": 19,
+    "chunk_num": 2,
+    "lines": 23
+  },
+  {
+    "name": "Nopol-Bugs.jar-Commons-Math-bfbb156d_0_Manual",
+    "add": 0,
+    "rm": 95,
+    "upd": 21,
+    "mv": 7,
+    "chunk_num": 16,
+    "lines": 120
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_0_Auto",
+    "add": 0,
+    "rm": 3,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_0_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_1_Auto",
+    "add": 2,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_1_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_2_Auto",
+    "add": 0,
+    "rm": 6,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 7
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_2_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_3_Auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_3_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_4_Auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-596ccd59_4_Manual",
+    "add": 13,
+    "rm": 0,
+    "upd": 5,
+    "mv": 3,
+    "chunk_num": 3,
+    "lines": 19
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-69273dca_0_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 10
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-69273dca_0_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-69273dca_1_Auto",
+    "add": 8,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 10
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-69273dca_1_Manual",
+    "add": 12,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 13
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-a06a1584_3_Auto",
+    "add": 0,
+    "rm": 11,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 11
+  },
+  {
+    "name": "RSRepair-Bugs.jar-Commons-Math-a06a1584_3_Manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 7,
+    "mv": 0,
+    "chunk_num": 7,
+    "lines": 7
+  }
+]

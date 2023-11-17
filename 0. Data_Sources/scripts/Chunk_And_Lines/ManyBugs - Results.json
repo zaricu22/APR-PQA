@@ -1,0 +1,344 @@
+[
+  {
+    "name": "angelix-gzip-884ef-auto",
+    "add": 0,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "angelix-gzip-884ef-auto-1",
+    "add": 0,
+    "rm": 1,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 3
+  },
+  {
+    "name": "angelix-gzip-884ef-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "angelix-gzip-884ef-manual-1",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "angelix-libtiff-2e42d-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 8,
+    "mv": 0,
+    "chunk_num": 8,
+    "lines": 8
+  },
+  {
+    "name": "angelix-libtiff-2e42d-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 8,
+    "mv": 0,
+    "chunk_num": 8,
+    "lines": 8
+  },
+  {
+    "name": "angelix-libtiff-3edb9-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "angelix-libtiff-3edb9-manual",
+    "add": 0,
+    "rm": 1,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "angelix-libtiff-865f7-auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 7
+  },
+  {
+    "name": "angelix-libtiff-865f7-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "angelix-php-2adf5-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "angelix-php-2adf5-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-gzip-f17cb-auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-gzip-f17cb-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-libtiff-2e42d-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 8,
+    "mv": 0,
+    "chunk_num": 8,
+    "lines": 8
+  },
+  {
+    "name": "prophet-libtiff-2e42d-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-libtiff-865f7-auto",
+    "add": 0,
+    "rm": 5,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 7
+  },
+  {
+    "name": "prophet-libtiff-865f7-auto-1",
+    "add": 0,
+    "rm": 5,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 3,
+    "lines": 7
+  },
+  {
+    "name": "prophet-libtiff-865f7-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-libtiff-865f7-manual-1",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-lighttpd-2662-auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-lighttpd-2662-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-3acdc-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-php-3acdc-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-821d7-auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-php-821d7-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-b8496-auto",
+    "add": 1,
+    "rm": 0,
+    "upd": 1,
+    "mv": 1,
+    "chunk_num": 1,
+    "lines": 3
+  },
+  {
+    "name": "prophet-php-b8496-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-d3b20-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 2
+  },
+  {
+    "name": "prophet-php-d3b20-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-d4ae4-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-php-d4ae4-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-daecb-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 2
+  },
+  {
+    "name": "prophet-php-daecb-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-php-f330c-auto",
+    "add": 0,
+    "rm": 0,
+    "upd": 1,
+    "mv": 0,
+    "chunk_num": 1,
+    "lines": 1
+  },
+  {
+    "name": "prophet-php-f330c-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  },
+  {
+    "name": "prophet-python-69935-auto",
+    "add": 3,
+    "rm": 0,
+    "upd": 2,
+    "mv": 0,
+    "chunk_num": 2,
+    "lines": 5
+  },
+  {
+    "name": "prophet-python-69935-manual",
+    "add": 0,
+    "rm": 0,
+    "upd": 0,
+    "mv": 0,
+    "chunk_num": 0,
+    "lines": 0
+  }
+]
