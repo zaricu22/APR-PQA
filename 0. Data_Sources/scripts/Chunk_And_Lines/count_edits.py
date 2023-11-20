@@ -166,15 +166,15 @@ def process_diff(diff_format):
 ##    print(f"chunks:{chunk_count}, lines:{total_lines}")
 
     return f"{total_added} {total_removed} {total_updated} {total_moved} {chunk_count} {total_lines}"
-        
 
+
+i = 0
 if __name__ == "__main__":
     # Specify full path to folder with separated projects by version (buggy, manual, auto)
-    work_folder = os.path.join(os.getcwd(), '..', 'ManyBugs_Result_19_VCXProjects')
-    out_file_path = 'Output-file-name (ManyBugs).json'
+    work_folder = os.path.join(os.getcwd(), '..', 'Bears_Result_30_Packages')
+    out_file_path = 'Output-file-name (Bears).json'
 
     final_results = []
-    i = 0
     for root, dirs, files in os.walk(work_folder):
         for f in files:
             file_path_cmp = os.path.join(root, f)

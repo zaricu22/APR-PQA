@@ -1,0 +1,1435 @@
+
+TOTAL: 60
+
+1: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_2_Buggy\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_2_Auto\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
+@@ -148,7 +148,6 @@ public class DfaSecurityRule extends BaseSecurityRule implements Executable {
+ 	}
+ 	private void init2() {
+ 		this.sinks = getConfig(this.sinkDescriptor);
+-		this.sanitizers = getConfig(this.sanitizerDescriptor);
+ 		this.sinkAnnotations = getConfig(this.sinkAnnotationsDescriptor);
+ 		this.generatorAnnotations = getConfig(this.generatorAnnotationsDescriptor);
+ 		this.searchAnnotationsInPackages = getConfig(this.annotationsPackagesDescriptor);
+2: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_2_Buggy\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_2_Manual\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
+@@ -544,6 +544,9 @@ public class DfaSecurityRule extends BaseSecurityRule implements Executable {
+ 	private boolean isAnyArgumentTainted(Node simpleNode) {
+ 		ASTArgumentList argListNode = simpleNode.getFirstDescendantOfType(ASTArgumentList.class);
+ 		if (argListNode != null) {
++			if (isSanitized(argListNode)) {
++				return false;
++			}
+ 			int numChildren = argListNode.jjtGetNumChildren();
+ 			for (int i = 0; i < numChildren; i++) {
+ 				Node argument = argListNode.jjtGetChild(i);
+@@ -555,6 +558,27 @@ public class DfaSecurityRule extends BaseSecurityRule implements Executable {
+ 		return false;
+ 	}
+ 
++	private boolean isSanitized(ASTArgumentList argListNode) {
++		try {
++			ASTArguments arguments = (ASTArguments) argListNode.jjtGetParent();
++			ASTPrimarySuffix suffix = (ASTPrimarySuffix) arguments.jjtGetParent();
++			ASTPrimaryExpression exp = (ASTPrimaryExpression) suffix.jjtGetParent();
++			String method = getMethod(exp);
++			Class<?> type = getJavaType(exp);
++			String typeName = type.getName();
++			if (isSink(typeName, method)) {
++				return false;
++			}
++			if (isSanitizerMethod(typeName, method) || isSafeType(getReturnType(exp, typeName, method))) {
++				return true;
++			}
++		}
++		catch (Exception e) {
++			return false;
++		}
++		return false;
++	}
++
+ 	private boolean isMethodCall(Node node) {
+ 		ASTArguments arguments = node.getFirstDescendantOfType(ASTArguments.class);
+ 		return arguments != null;
+3: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_0_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_0_Auto\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -98,7 +98,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+         spanBuilder.asChildOf(activeScope.span());
+       }
+       final Scope scope = spanBuilder.startActive(true);
+-      decorate(scope.span(), statementInformation);
+       return scope;
+     } catch (SQLException e) {
+       return NoopScopeManager.NoopScope.INSTANCE;
+4: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_0_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_0_Manual\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -122,13 +122,17 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+     Tags.COMPONENT.set(span, "java-p6spy");
+     Tags.DB_STATEMENT.set(span, statementInformation.getSql());
+-    Tags.DB_TYPE.set(span, extractDbType(dbUrl));
+-    Tags.DB_INSTANCE.set(span, dbInstance);
+-    span.setTag("peer.address", dbUrl);
+-    if (peerName != null && !peerName.isEmpty()) {
++    if (!isNullOrEmpty(dbUrl)) {
++      span.setTag("peer.address", dbUrl);
++      Tags.DB_TYPE.set(span, extractDbType(dbUrl));
++    }
++    if (!isNullOrEmpty(dbInstance)) {
++      Tags.DB_INSTANCE.set(span, dbInstance);
++    }
++    if (!isNullOrEmpty(peerName)) {
+       Tags.PEER_SERVICE.set(span, peerName);
+     }
+-    if (dbUser != null && !dbUser.isEmpty()) {
++    if (!isNullOrEmpty(dbUser)) {
+       Tags.DB_USER.set(span, dbUser);
+     }
+   }
+@@ -138,9 +142,11 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+   }
+ 
+   private static String extractPeerService(String url) {
+-    Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
+-    if (matcher.find() && matcher.groupCount() == 1) {
+-      return matcher.group(1);
++    if (url != null) {
++      Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
++      if (matcher.find() && matcher.groupCount() == 1) {
++        return matcher.group(1);
++      }
+     }
+     return "";
+   }
+@@ -167,4 +173,8 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+     }
+     return OptionalBoolean.OPTION_NOT_FOUND;
+   }
++
++  private static boolean isNullOrEmpty(String s) {
++    return s == null || s.isEmpty();
++  }
+ }
+5: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_1_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_1_Auto\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -70,7 +70,8 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+   private void onBefore(String operationName, StatementInformation statementInformation) {
+     final Tracer tracer = GlobalTracer.get();
+-    if (tracer == null) return;
++    if (tracer == null)
++		;
+     final Scope scope = buildSpan(tracer, operationName, statementInformation);
+     currentScope.set(scope);
+   }
+@@ -98,7 +99,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+         spanBuilder.asChildOf(activeScope.span());
+       }
+       final Scope scope = spanBuilder.startActive(true);
+-      decorate(scope.span(), statementInformation);
+       return scope;
+     } catch (SQLException e) {
+       return NoopScopeManager.NoopScope.INSTANCE;
+6: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_1_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_1_Manual\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -122,13 +122,17 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+     Tags.COMPONENT.set(span, "java-p6spy");
+     Tags.DB_STATEMENT.set(span, statementInformation.getSql());
+-    Tags.DB_TYPE.set(span, extractDbType(dbUrl));
+-    Tags.DB_INSTANCE.set(span, dbInstance);
+-    span.setTag("peer.address", dbUrl);
+-    if (peerName != null && !peerName.isEmpty()) {
++    if (!isNullOrEmpty(dbUrl)) {
++      span.setTag("peer.address", dbUrl);
++      Tags.DB_TYPE.set(span, extractDbType(dbUrl));
++    }
++    if (!isNullOrEmpty(dbInstance)) {
++      Tags.DB_INSTANCE.set(span, dbInstance);
++    }
++    if (!isNullOrEmpty(peerName)) {
+       Tags.PEER_SERVICE.set(span, peerName);
+     }
+-    if (dbUser != null && !dbUser.isEmpty()) {
++    if (!isNullOrEmpty(dbUser)) {
+       Tags.DB_USER.set(span, dbUser);
+     }
+   }
+@@ -138,9 +142,11 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+   }
+ 
+   private static String extractPeerService(String url) {
+-    Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
+-    if (matcher.find() && matcher.groupCount() == 1) {
+-      return matcher.group(1);
++    if (url != null) {
++      Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
++      if (matcher.find() && matcher.groupCount() == 1) {
++        return matcher.group(1);
++      }
+     }
+     return "";
+   }
+@@ -167,4 +173,8 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+     }
+     return OptionalBoolean.OPTION_NOT_FOUND;
+   }
++
++  private static boolean isNullOrEmpty(String s) {
++    return s == null || s.isEmpty();
++  }
+ }
+7: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_2_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_2_Auto\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -87,10 +87,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+       final Scope activeScope = tracer.scopeManager().active();
+       final String dbUrl =
+           statementInformation.getConnectionInformation().getConnection().getMetaData().getURL();
+-      if (!allowTraceWithNoActiveSpan(dbUrl) && activeScope == null) {
+-        return NoopScopeManager.NoopScope.INSTANCE;
+-      }
+-
+       final Tracer.SpanBuilder spanBuilder = tracer
+           .buildSpan(operationName)
+           .withTag(Tags.SPAN_KIND.getKey(), Tags.SPAN_KIND_CLIENT);
+@@ -98,7 +94,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+         spanBuilder.asChildOf(activeScope.span());
+       }
+       final Scope scope = spanBuilder.startActive(true);
+-      decorate(scope.span(), statementInformation);
+       return scope;
+     } catch (SQLException e) {
+       return NoopScopeManager.NoopScope.INSTANCE;
+@@ -152,7 +147,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+   private static OptionalBoolean withActiveSpanOnly(String url) {
+     if(url == null) {
+-      return OptionalBoolean.OPTION_NOT_FOUND;
+     }
+     if(url.contains(TRACE_WITH_ACTIVE_SPAN_ONLY_FINDER) && url.contains(TRACE_WITHOUT_ACTIVE_SPAN_ONLY_FINDER)) {
+       if(log.isLoggable(Level.WARNING)) {
+8: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_2_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_2_Manual\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -122,13 +122,17 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+     Tags.COMPONENT.set(span, "java-p6spy");
+     Tags.DB_STATEMENT.set(span, statementInformation.getSql());
+-    Tags.DB_TYPE.set(span, extractDbType(dbUrl));
+-    Tags.DB_INSTANCE.set(span, dbInstance);
+-    span.setTag("peer.address", dbUrl);
+-    if (peerName != null && !peerName.isEmpty()) {
++    if (!isNullOrEmpty(dbUrl)) {
++      span.setTag("peer.address", dbUrl);
++      Tags.DB_TYPE.set(span, extractDbType(dbUrl));
++    }
++    if (!isNullOrEmpty(dbInstance)) {
++      Tags.DB_INSTANCE.set(span, dbInstance);
++    }
++    if (!isNullOrEmpty(peerName)) {
+       Tags.PEER_SERVICE.set(span, peerName);
+     }
+-    if (dbUser != null && !dbUser.isEmpty()) {
++    if (!isNullOrEmpty(dbUser)) {
+       Tags.DB_USER.set(span, dbUser);
+     }
+   }
+@@ -138,9 +142,11 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+   }
+ 
+   private static String extractPeerService(String url) {
+-    Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
+-    if (matcher.find() && matcher.groupCount() == 1) {
+-      return matcher.group(1);
++    if (url != null) {
++      Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
++      if (matcher.find() && matcher.groupCount() == 1) {
++        return matcher.group(1);
++      }
+     }
+     return "";
+   }
+@@ -167,4 +173,8 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+     }
+     return OptionalBoolean.OPTION_NOT_FOUND;
+   }
++
++  private static boolean isNullOrEmpty(String s) {
++    return s == null || s.isEmpty();
++  }
+ }
+9: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_3_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_3_Auto\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -70,7 +70,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+   private void onBefore(String operationName, StatementInformation statementInformation) {
+     final Tracer tracer = GlobalTracer.get();
+-    if (tracer == null) return;
+     final Scope scope = buildSpan(tracer, operationName, statementInformation);
+     currentScope.set(scope);
+   }
+@@ -98,7 +97,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+         spanBuilder.asChildOf(activeScope.span());
+       }
+       final Scope scope = spanBuilder.startActive(true);
+-      decorate(scope.span(), statementInformation);
+       return scope;
+     } catch (SQLException e) {
+       return NoopScopeManager.NoopScope.INSTANCE;
+10: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_3_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_3_Manual\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -122,13 +122,17 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+     Tags.COMPONENT.set(span, "java-p6spy");
+     Tags.DB_STATEMENT.set(span, statementInformation.getSql());
+-    Tags.DB_TYPE.set(span, extractDbType(dbUrl));
+-    Tags.DB_INSTANCE.set(span, dbInstance);
+-    span.setTag("peer.address", dbUrl);
+-    if (peerName != null && !peerName.isEmpty()) {
++    if (!isNullOrEmpty(dbUrl)) {
++      span.setTag("peer.address", dbUrl);
++      Tags.DB_TYPE.set(span, extractDbType(dbUrl));
++    }
++    if (!isNullOrEmpty(dbInstance)) {
++      Tags.DB_INSTANCE.set(span, dbInstance);
++    }
++    if (!isNullOrEmpty(peerName)) {
+       Tags.PEER_SERVICE.set(span, peerName);
+     }
+-    if (dbUser != null && !dbUser.isEmpty()) {
++    if (!isNullOrEmpty(dbUser)) {
+       Tags.DB_USER.set(span, dbUser);
+     }
+   }
+@@ -138,9 +142,11 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+   }
+ 
+   private static String extractPeerService(String url) {
+-    Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
+-    if (matcher.find() && matcher.groupCount() == 1) {
+-      return matcher.group(1);
++    if (url != null) {
++      Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
++      if (matcher.find() && matcher.groupCount() == 1) {
++        return matcher.group(1);
++      }
+     }
+     return "";
+   }
+@@ -167,4 +173,8 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+     }
+     return OptionalBoolean.OPTION_NOT_FOUND;
+   }
++
++  private static boolean isNullOrEmpty(String s) {
++    return s == null || s.isEmpty();
++  }
+ }
+11: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_4_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_4_Auto\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -87,10 +87,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+       final Scope activeScope = tracer.scopeManager().active();
+       final String dbUrl =
+           statementInformation.getConnectionInformation().getConnection().getMetaData().getURL();
+-      if (!allowTraceWithNoActiveSpan(dbUrl) && activeScope == null) {
+-        return NoopScopeManager.NoopScope.INSTANCE;
+-      }
+-
+       final Tracer.SpanBuilder spanBuilder = tracer
+           .buildSpan(operationName)
+           .withTag(Tags.SPAN_KIND.getKey(), Tags.SPAN_KIND_CLIENT);
+@@ -98,7 +94,6 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+         spanBuilder.asChildOf(activeScope.span());
+       }
+       final Scope scope = spanBuilder.startActive(true);
+-      decorate(scope.span(), statementInformation);
+       return scope;
+     } catch (SQLException e) {
+       return NoopScopeManager.NoopScope.INSTANCE;
+12: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_4_Buggy\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-opentracing-contrib-java-p6spy-390188323-431527545_4_Manual\\src\\io\\opentracing\\contrib\\p6spy\\TracingP6SpyListener.java"	
+@@ -122,13 +122,17 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+ 
+     Tags.COMPONENT.set(span, "java-p6spy");
+     Tags.DB_STATEMENT.set(span, statementInformation.getSql());
+-    Tags.DB_TYPE.set(span, extractDbType(dbUrl));
+-    Tags.DB_INSTANCE.set(span, dbInstance);
+-    span.setTag("peer.address", dbUrl);
+-    if (peerName != null && !peerName.isEmpty()) {
++    if (!isNullOrEmpty(dbUrl)) {
++      span.setTag("peer.address", dbUrl);
++      Tags.DB_TYPE.set(span, extractDbType(dbUrl));
++    }
++    if (!isNullOrEmpty(dbInstance)) {
++      Tags.DB_INSTANCE.set(span, dbInstance);
++    }
++    if (!isNullOrEmpty(peerName)) {
+       Tags.PEER_SERVICE.set(span, peerName);
+     }
+-    if (dbUser != null && !dbUser.isEmpty()) {
++    if (!isNullOrEmpty(dbUser)) {
+       Tags.DB_USER.set(span, dbUser);
+     }
+   }
+@@ -138,9 +142,11 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+   }
+ 
+   private static String extractPeerService(String url) {
+-    Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
+-    if (matcher.find() && matcher.groupCount() == 1) {
+-      return matcher.group(1);
++    if (url != null) {
++      Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
++      if (matcher.find() && matcher.groupCount() == 1) {
++        return matcher.group(1);
++      }
+     }
+     return "";
+   }
+@@ -167,4 +173,8 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
+     }
+     return OptionalBoolean.OPTION_NOT_FOUND;
+   }
++
++  private static boolean isNullOrEmpty(String s) {
++    return s == null || s.isEmpty();
++  }
+ }
+13: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        add(progressBarsPanel);
+     }
+ 
+     /**
+@@ -135,7 +135,8 @@ public class Dashboard extends JPanel {
+      * @return          The mapped value between [-75, 255] interval.
+      */
+     private int calculateSpeedometer(int speed) {
+-        final int minSpeedValue = 0;
++        progressBarsPanel.add(gasProgressBar);
++		final int minSpeedValue = 0;
+         final int maxSpeedValue = 500;
+         final int minSpeedMeter = -75;
+         final int maxSpeedMeter = 255;
+14: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+15: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        add(progressBarsPanel);
+     }
+ 
+     /**
+@@ -75,7 +75,8 @@ public class Dashboard extends JPanel {
+      * Initializes the progress bars on the dashboard
+      */
+     private void initializeProgressBars() {
+-        progressBarsPanel.setBackground(new Color(backgroundColor));
++        setLayout(null);
++		progressBarsPanel.setBackground(new Color(backgroundColor));
+         progressBarsPanel.setBounds(
+                 progressBarsPanelX,
+                 progressBarsPanelY,
+@@ -100,7 +101,6 @@ public class Dashboard extends JPanel {
+      * @param g {@link Graphics} object that can draw to the canvas
+      */
+     protected void paintComponent(Graphics g) {
+-        super.paintComponent(g);
+         g.setColor(Color.BLACK);
+         g.drawOval(speedMeterX, speedMeterY, meterWidth, meterHeight);
+         g.drawOval(tachoMeterX, tachoMeterY, meterWidth, meterHeight);
+16: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+17: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        add(progressBarsPanel);
+     }
+ 
+     /**
+@@ -68,7 +68,8 @@ public class Dashboard extends JPanel {
+         setBackground(new Color(backgroundColor));
+         setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
+ 
+-        initializeProgressBars();
++        setLayout(null);
++		initializeProgressBars();
+     }
+ 
+     /**
+18: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+19: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        speedAngle = calculateSpeedometer(0);
+     }
+ 
+     /**
+@@ -100,7 +100,8 @@ public class Dashboard extends JPanel {
+      * @param g {@link Graphics} object that can draw to the canvas
+      */
+     protected void paintComponent(Graphics g) {
+-        super.paintComponent(g);
++        breakLabel.setText("break pedal");
++		super.paintComponent(g);
+         g.setColor(Color.BLACK);
+         g.drawOval(speedMeterX, speedMeterY, meterWidth, meterHeight);
+         g.drawOval(tachoMeterX, tachoMeterY, meterWidth, meterHeight);
+20: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+21: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,6 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
+     }
+ 
+     /**
+@@ -83,14 +82,15 @@ public class Dashboard extends JPanel {
+                 progressBarsPanelHeight);
+ 
+         gasLabel.setText("gas pedal");
+-        breakLabel.setText("break pedal");
++        rpmAngle = calculateTachometer(0);
++		breakLabel.setText("break pedal");
+         gasProgressBar.setStringPainted(true);
+         breakProgressBar.setStringPainted(true);
+ 
+         add(progressBarsPanel);
+         progressBarsPanel.add(gasLabel);
+         progressBarsPanel.add(gasProgressBar);
+-        progressBarsPanel.add(breakLabel);
++        progressBarsPanel.add(gasLabel);
+         progressBarsPanel.add(breakProgressBar);
+     }
+ 
+@@ -135,7 +135,8 @@ public class Dashboard extends JPanel {
+      * @return          The mapped value between [-75, 255] interval.
+      */
+     private int calculateSpeedometer(int speed) {
+-        final int minSpeedValue = 0;
++        progressBarsPanel.add(gasLabel);
++		final int minSpeedValue = 0;
+         final int maxSpeedValue = 500;
+         final int minSpeedMeter = -75;
+         final int maxSpeedMeter = 255;
+22: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+23: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_0_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_0_Auto\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,18 +106,6 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+-            long deviceId = findDeviceId(remoteAddress, uniqueIds);
+-            if (deviceId != 0) {
+-                if (Context.getConnectionManager() != null) {
+-                    Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);
+-                }
+-                return new DeviceSession(deviceId);
+-            } else {
+-                return null;
+-            }
+-        }
+         if (channel instanceof DatagramChannel) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             DeviceSession deviceSession = addressDeviceSessions.get(remoteAddress);
+24: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_0_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_0_Manual\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,7 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
++        if (channel != null && channel.getPipeline().get(HttpRequestDecoder.class) != null
+                 || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+25: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_1_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_1_Auto\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,18 +106,6 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+-            long deviceId = findDeviceId(remoteAddress, uniqueIds);
+-            if (deviceId != 0) {
+-                if (Context.getConnectionManager() != null) {
+-                    Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);
+-                }
+-                return new DeviceSession(deviceId);
+-            } else {
+-                return null;
+-            }
+-        }
+         if (channel instanceof DatagramChannel) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             DeviceSession deviceSession = addressDeviceSessions.get(remoteAddress);
+26: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_1_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_1_Manual\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,7 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
++        if (channel != null && channel.getPipeline().get(HttpRequestDecoder.class) != null
+                 || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+27: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_2_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_2_Auto\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,18 +106,6 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+-            long deviceId = findDeviceId(remoteAddress, uniqueIds);
+-            if (deviceId != 0) {
+-                if (Context.getConnectionManager() != null) {
+-                    Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);
+-                }
+-                return new DeviceSession(deviceId);
+-            } else {
+-                return null;
+-            }
+-        }
+         if (channel instanceof DatagramChannel) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             DeviceSession deviceSession = addressDeviceSessions.get(remoteAddress);
+28: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_2_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_2_Manual\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,7 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
++        if (channel != null && channel.getPipeline().get(HttpRequestDecoder.class) != null
+                 || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+29: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_3_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_3_Auto\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,18 +106,6 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+-            long deviceId = findDeviceId(remoteAddress, uniqueIds);
+-            if (deviceId != 0) {
+-                if (Context.getConnectionManager() != null) {
+-                    Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);
+-                }
+-                return new DeviceSession(deviceId);
+-            } else {
+-                return null;
+-            }
+-        }
+         if (channel instanceof DatagramChannel) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             DeviceSession deviceSession = addressDeviceSessions.get(remoteAddress);
+30: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_3_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_3_Manual\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,7 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
++        if (channel != null && channel.getPipeline().get(HttpRequestDecoder.class) != null
+                 || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+31: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_4_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_4_Auto\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,18 +106,6 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+-            long deviceId = findDeviceId(remoteAddress, uniqueIds);
+-            if (deviceId != 0) {
+-                if (Context.getConnectionManager() != null) {
+-                    Context.getConnectionManager().addActiveDevice(deviceId, protocol, channel, remoteAddress);
+-                }
+-                return new DeviceSession(deviceId);
+-            } else {
+-                return null;
+-            }
+-        }
+         if (channel instanceof DatagramChannel) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             DeviceSession deviceSession = addressDeviceSessions.get(remoteAddress);
+32: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_4_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Arja-Bears-traccar-traccar-255051210-255052458_4_Manual\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,7 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
++        if (channel != null && channel.getPipeline().get(HttpRequestDecoder.class) != null
+                 || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+33: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -53,10 +53,10 @@ public class Dashboard extends JPanel {
+      */
+     public void updateDisplayedValues(ReadOnlyInputPacket inputPacket) {
+         gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+-        breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
++        setLayout(null);
++		breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+-        rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        initializeDashboard();
+     }
+ 
+     /**
+@@ -66,16 +66,16 @@ public class Dashboard extends JPanel {
+         // Not using any layout manager, but fixed coordinates
+         setLayout(null);
+         setBackground(new Color(backgroundColor));
+-        setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
+-
+-        initializeProgressBars();
++        progressBarsPanel.add(breakProgressBar);
++		progressBarsPanel.add(breakLabel);
++		progressBarsPanel.add(breakLabel);
+     }
+ 
+     /**
+      * Initializes the progress bars on the dashboard
+      */
+     private void initializeProgressBars() {
+-        progressBarsPanel.setBackground(new Color(backgroundColor));
++        setLayout(null);
+         progressBarsPanel.setBounds(
+                 progressBarsPanelX,
+                 progressBarsPanelY,
+@@ -85,12 +85,14 @@ public class Dashboard extends JPanel {
+         gasLabel.setText("gas pedal");
+         breakLabel.setText("break pedal");
+         gasProgressBar.setStringPainted(true);
+-        breakProgressBar.setStringPainted(true);
++        progressBarsPanel.setBackground(new Color(backgroundColor));
++		breakProgressBar.setStringPainted(true);
+ 
+-        add(progressBarsPanel);
+-        progressBarsPanel.add(gasLabel);
++        breakLabel.setText("break pedal");
++		add(progressBarsPanel);
+         progressBarsPanel.add(gasProgressBar);
+-        progressBarsPanel.add(breakLabel);
++        final int maxSpeedMeter = 255;
++		progressBarsPanel.add(gasProgressBar);
+         progressBarsPanel.add(breakProgressBar);
+     }
+ 
+@@ -136,7 +138,8 @@ public class Dashboard extends JPanel {
+      */
+     private int calculateSpeedometer(int speed) {
+         final int minSpeedValue = 0;
+-        final int maxSpeedValue = 500;
++        gasProgressBar.setStringPainted(true);
++		final int maxSpeedValue = 500;
+         final int minSpeedMeter = -75;
+         final int maxSpeedMeter = 255;
+         int newspeed = maxSpeedValue - speed;
+34: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+35: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -54,28 +54,23 @@ public class Dashboard extends JPanel {
+     public void updateDisplayedValues(ReadOnlyInputPacket inputPacket) {
+         gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+-        speedAngle = calculateSpeedometer(0);
+-        rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
+     }
+ 
+     /**
+      * Initializes the dashboard components
+      */
+     private void initializeDashboard() {
+-        // Not using any layout manager, but fixed coordinates
+-        setLayout(null);
+-        setBackground(new Color(backgroundColor));
+         setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
+ 
+-        initializeProgressBars();
++        progressBarsPanel.add(gasLabel);
++		progressBarsPanel.setBackground(new Color(backgroundColor));
+     }
+ 
+     /**
+      * Initializes the progress bars on the dashboard
+      */
+     private void initializeProgressBars() {
+-        progressBarsPanel.setBackground(new Color(backgroundColor));
++        gasProgressBar.setStringPainted(true);
+         progressBarsPanel.setBounds(
+                 progressBarsPanelX,
+                 progressBarsPanelY,
+@@ -83,15 +78,14 @@ public class Dashboard extends JPanel {
+                 progressBarsPanelHeight);
+ 
+         gasLabel.setText("gas pedal");
+-        breakLabel.setText("break pedal");
++        progressBarsPanel.add(breakLabel);
+         gasProgressBar.setStringPainted(true);
+-        breakProgressBar.setStringPainted(true);
+-
+-        add(progressBarsPanel);
+-        progressBarsPanel.add(gasLabel);
++        progressBarsPanel.setBackground(new Color(backgroundColor));
+         progressBarsPanel.add(gasProgressBar);
+-        progressBarsPanel.add(breakLabel);
+         progressBarsPanel.add(breakProgressBar);
++		final int maxSpeedMeter = 255;
++		progressBarsPanel.add(breakLabel);
++        final int minRpmMeter = -75;
+     }
+ 
+     /**
+@@ -120,9 +114,16 @@ public class Dashboard extends JPanel {
+     private int calculateTachometer(int rpm) {
+         final int minRpmValue = 0;
+         final int maxRpmValue = 10000;
+-        final int minRpmMeter = -75;
+-        final int maxRpmMeter = 255;
+-        int newrpm = maxRpmValue - rpm;
++        progressBarsPanel.add(breakProgressBar);
++		progressBarsPanel.add(breakProgressBar);
++		final int minRpmMeter = -75;
++        final int minSpeedMeter = -75;
++		final int maxRpmMeter = 255;
++        setBackground(new Color(backgroundColor));
++		setBackground(new Color(backgroundColor));
++		setBackground(new Color(backgroundColor));
++		setBackground(new Color(backgroundColor));
++		int newrpm = maxRpmValue - rpm;
+ 
+         return (newrpm - minRpmValue) * (maxRpmMeter - minRpmMeter) / (maxRpmValue - minRpmValue) + minRpmMeter;
+     }
+@@ -135,9 +136,18 @@ public class Dashboard extends JPanel {
+      * @return          The mapped value between [-75, 255] interval.
+      */
+     private int calculateSpeedometer(int speed) {
+-        final int minSpeedValue = 0;
++        progressBarsPanel.add(gasProgressBar);
++		progressBarsPanel.add(gasProgressBar);
++		progressBarsPanel.add(gasProgressBar);
++		progressBarsPanel.add(gasProgressBar);
++		progressBarsPanel.add(gasProgressBar);
++		progressBarsPanel.add(gasProgressBar);
++		progressBarsPanel.add(gasProgressBar);
++		setBackground(new Color(backgroundColor));
++		final int minSpeedValue = 0;
+         final int maxSpeedValue = 500;
+-        final int minSpeedMeter = -75;
++        setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
++		final int minSpeedMeter = -75;
+         final int maxSpeedMeter = 255;
+         int newspeed = maxSpeedValue - speed;
+ 
+36: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+37: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -55,8 +55,8 @@ public class Dashboard extends JPanel {
+         gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+-        rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
++        final int maxSpeedMeter = 255;
+     }
+ 
+     /**
+@@ -65,10 +65,12 @@ public class Dashboard extends JPanel {
+     private void initializeDashboard() {
+         // Not using any layout manager, but fixed coordinates
+         setLayout(null);
+-        setBackground(new Color(backgroundColor));
++        gasLabel.setText("gas pedal");
++		setBackground(new Color(backgroundColor));
+         setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
+ 
+-        initializeProgressBars();
++        progressBarsPanel.add(breakLabel);
++		progressBarsPanel.add(breakLabel);
+     }
+ 
+     /**
+@@ -85,13 +87,13 @@ public class Dashboard extends JPanel {
+         gasLabel.setText("gas pedal");
+         breakLabel.setText("break pedal");
+         gasProgressBar.setStringPainted(true);
+-        breakProgressBar.setStringPainted(true);
++        progressBarsPanel.setBackground(new Color(backgroundColor));
++		breakProgressBar.setStringPainted(true);
+ 
+         add(progressBarsPanel);
+         progressBarsPanel.add(gasLabel);
+-        progressBarsPanel.add(gasProgressBar);
++        gasLabel.setText("gas pedal");
+         progressBarsPanel.add(breakLabel);
+-        progressBarsPanel.add(breakProgressBar);
+     }
+ 
+     /**
+@@ -100,7 +102,6 @@ public class Dashboard extends JPanel {
+      * @param g {@link Graphics} object that can draw to the canvas
+      */
+     protected void paintComponent(Graphics g) {
+-        super.paintComponent(g);
+         g.setColor(Color.BLACK);
+         g.drawOval(speedMeterX, speedMeterY, meterWidth, meterHeight);
+         g.drawOval(tachoMeterX, tachoMeterY, meterWidth, meterHeight);
+@@ -122,7 +123,8 @@ public class Dashboard extends JPanel {
+         final int maxRpmValue = 10000;
+         final int minRpmMeter = -75;
+         final int maxRpmMeter = 255;
+-        int newrpm = maxRpmValue - rpm;
++        setBackground(new Color(backgroundColor));
++		int newrpm = maxRpmValue - rpm;
+ 
+         return (newrpm - minRpmValue) * (maxRpmMeter - minRpmMeter) / (maxRpmValue - minRpmValue) + minRpmMeter;
+     }
+38: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+39: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        final int minSpeedMeter = -75;
+     }
+ 
+     /**
+@@ -75,7 +75,8 @@ public class Dashboard extends JPanel {
+      * Initializes the progress bars on the dashboard
+      */
+     private void initializeProgressBars() {
+-        progressBarsPanel.setBackground(new Color(backgroundColor));
++        setBackground(new Color(backgroundColor));
++		progressBarsPanel.setBackground(new Color(backgroundColor));
+         progressBarsPanel.setBounds(
+                 progressBarsPanelX,
+                 progressBarsPanelY,
+@@ -83,12 +84,10 @@ public class Dashboard extends JPanel {
+                 progressBarsPanelHeight);
+ 
+         gasLabel.setText("gas pedal");
+-        breakLabel.setText("break pedal");
+         gasProgressBar.setStringPainted(true);
+         breakProgressBar.setStringPainted(true);
+ 
+         add(progressBarsPanel);
+-        progressBarsPanel.add(gasLabel);
+         progressBarsPanel.add(gasProgressBar);
+         progressBarsPanel.add(breakLabel);
+         progressBarsPanel.add(breakProgressBar);
+@@ -119,7 +118,8 @@ public class Dashboard extends JPanel {
+      */
+     private int calculateTachometer(int rpm) {
+         final int minRpmValue = 0;
+-        final int maxRpmValue = 10000;
++        gasLabel.setText("gas pedal");
++		final int maxRpmValue = 10000;
+         final int minRpmMeter = -75;
+         final int maxRpmMeter = 255;
+         int newrpm = maxRpmValue - rpm;
+@@ -139,7 +139,8 @@ public class Dashboard extends JPanel {
+         final int maxSpeedValue = 500;
+         final int minSpeedMeter = -75;
+         final int maxSpeedMeter = 255;
+-        int newspeed = maxSpeedValue - speed;
++        progressBarsPanel.add(breakLabel);
++		int newspeed = maxSpeedValue - speed;
+ 
+         return (newspeed - minSpeedValue) * (maxSpeedMeter - minSpeedMeter)
+                 / (maxSpeedValue - minSpeedValue) + minSpeedMeter;
+40: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+41: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -53,10 +53,13 @@ public class Dashboard extends JPanel {
+      */
+     public void updateDisplayedValues(ReadOnlyInputPacket inputPacket) {
+         gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+-        breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
++        setLayout(null);
++		setLayout(null);
++		breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+-        rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        gasProgressBar.setStringPainted(true);
++        final int maxRpmValue = 10000;
++		setLayout(null);
+     }
+ 
+     /**
+@@ -65,10 +68,14 @@ public class Dashboard extends JPanel {
+     private void initializeDashboard() {
+         // Not using any layout manager, but fixed coordinates
+         setLayout(null);
+-        setBackground(new Color(backgroundColor));
++        rpmAngle = calculateTachometer(0);
++		rpmAngle = calculateTachometer(0);
+         setBounds(dashboardBoundsX, dashboardBoundsY, width, height);
+ 
+-        initializeProgressBars();
++        progressBarsPanel.add(breakLabel);
++		progressBarsPanel.add(breakLabel);
++		progressBarsPanel.add(breakLabel);
++		initializeProgressBars();
+     }
+ 
+     /**
+@@ -83,15 +90,12 @@ public class Dashboard extends JPanel {
+                 progressBarsPanelHeight);
+ 
+         gasLabel.setText("gas pedal");
+-        breakLabel.setText("break pedal");
+-        gasProgressBar.setStringPainted(true);
+-        breakProgressBar.setStringPainted(true);
+-
+-        add(progressBarsPanel);
++        progressBarsPanel.setBounds(progressBarsPanelX, progressBarsPanelY,
++				progressBarsPanelWidth, progressBarsPanelHeight);
+         progressBarsPanel.add(gasLabel);
+         progressBarsPanel.add(gasProgressBar);
+         progressBarsPanel.add(breakLabel);
+-        progressBarsPanel.add(breakProgressBar);
++        setLayout(null);
+     }
+ 
+     /**
+@@ -141,7 +145,8 @@ public class Dashboard extends JPanel {
+         final int maxSpeedMeter = 255;
+         int newspeed = maxSpeedValue - speed;
+ 
+-        return (newspeed - minSpeedValue) * (maxSpeedMeter - minSpeedMeter)
++        final int maxRpmValue = 10000;
++		return (newspeed - minSpeedValue) * (maxSpeedMeter - minSpeedMeter)
+                 / (maxSpeedValue - minSpeedValue) + minSpeedMeter;
+     }
+ }
+42: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\GenProg-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+43: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Buggy\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Auto\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
+@@ -141,7 +141,7 @@ public class DfaSecurityRule extends BaseSecurityRule implements Executable {
+ 	@Override
+ 	protected void init() {
+ 		super.init();
+-		if (!this.initialized) {
++		if (true) {
+ 			init2();
+ 			this.initialized = true;
+ 		}
+44: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Buggy\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-albfernandez-GDS-PMD-Security-Rules-451155169-455669767_0_Manual\\src\\com\\gdssecurity\\pmd\\rules\\dfa\\DfaSecurityRule.java"	
+@@ -544,6 +544,9 @@ public class DfaSecurityRule extends BaseSecurityRule implements Executable {
+ 	private boolean isAnyArgumentTainted(Node simpleNode) {
+ 		ASTArgumentList argListNode = simpleNode.getFirstDescendantOfType(ASTArgumentList.class);
+ 		if (argListNode != null) {
++			if (isSanitized(argListNode)) {
++				return false;
++			}
+ 			int numChildren = argListNode.jjtGetNumChildren();
+ 			for (int i = 0; i < numChildren; i++) {
+ 				Node argument = argListNode.jjtGetChild(i);
+@@ -555,6 +558,27 @@ public class DfaSecurityRule extends BaseSecurityRule implements Executable {
+ 		return false;
+ 	}
+ 
++	private boolean isSanitized(ASTArgumentList argListNode) {
++		try {
++			ASTArguments arguments = (ASTArguments) argListNode.jjtGetParent();
++			ASTPrimarySuffix suffix = (ASTPrimarySuffix) arguments.jjtGetParent();
++			ASTPrimaryExpression exp = (ASTPrimaryExpression) suffix.jjtGetParent();
++			String method = getMethod(exp);
++			Class<?> type = getJavaType(exp);
++			String typeName = type.getName();
++			if (isSink(typeName, method)) {
++				return false;
++			}
++			if (isSanitizerMethod(typeName, method) || isSafeType(getReturnType(exp, typeName, method))) {
++				return true;
++			}
++		}
++		catch (Exception e) {
++			return false;
++		}
++		return false;
++	}
++
+ 	private boolean isMethodCall(Node node) {
+ 		ASTArguments arguments = node.getFirstDescendantOfType(ASTArguments.class);
+ 		return arguments != null;
+45: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-dungba88-libra-436514153-436524727_0_Buggy\\src\\org\\joo\\libra\\pointer\\VariablePredicate.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-dungba88-libra-436514153-436524727_0_Auto\\src\\org\\joo\\libra\\pointer\\VariablePredicate.java"	
+@@ -31,7 +31,7 @@ public class VariablePredicate implements CompositionPredicate {
+         	return !((String)rawValue).isEmpty();
+         if (rawValue instanceof Number)
+         	return ((Number) rawValue).doubleValue() != 0.0;
+-        if (rawValue instanceof Boolean)
++        if (true)
+         	return Boolean.TRUE.equals(rawValue);
+         return true;
+     }
+46: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-dungba88-libra-436514153-436524727_0_Buggy\\src\\org\\joo\\libra\\pointer\\VariablePredicate.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-dungba88-libra-436514153-436524727_0_Manual\\src\\org\\joo\\libra\\pointer\\VariablePredicate.java"	
+@@ -1,5 +1,7 @@
+ package org.joo.libra.pointer;
+ 
++import java.util.Collection;
++
+ import org.joo.libra.PredicateContext;
+ import org.joo.libra.common.CompositionPredicate;
+ import org.joo.libra.common.HasValue;
+@@ -33,6 +35,10 @@ public class VariablePredicate implements CompositionPredicate {
+         	return ((Number) rawValue).doubleValue() != 0.0;
+         if (rawValue instanceof Boolean)
+         	return Boolean.TRUE.equals(rawValue);
++        if (rawValue instanceof Collection)
++        	return !((Collection<?>) rawValue).isEmpty();
++        if (rawValue instanceof Object[])
++        	return ((Object[]) rawValue).length != 0;
+         return true;
+     }
+     
+47: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -54,7 +54,9 @@ public class Dashboard extends JPanel {
+     public void updateDisplayedValues(ReadOnlyInputPacket inputPacket) {
+         gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+-        speedAngle = calculateSpeedometer(0);
++        if (true)
++			return;
++		speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+         paintComponent(getGraphics());
+     }
+48: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+49: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-traccar-traccar-255051210-255052458_0_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-traccar-traccar-255051210-255052458_0_Auto\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,8 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
+-                || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
++        if (false) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+                 if (Context.getConnectionManager() != null) {
+50: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-traccar-traccar-255051210-255052458_0_Buggy\\src\\org\\traccar\\BaseProtocolDecoder.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\Kali-Bears-traccar-traccar-255051210-255052458_0_Manual\\src\\org\\traccar\\BaseProtocolDecoder.java"	
+@@ -106,7 +106,7 @@ public abstract class BaseProtocolDecoder extends ExtendedObjectDecoder {
+     }
+ 
+     public DeviceSession getDeviceSession(Channel channel, SocketAddress remoteAddress, String... uniqueIds) {
+-        if (channel.getPipeline().get(HttpRequestDecoder.class) != null
++        if (channel != null && channel.getPipeline().get(HttpRequestDecoder.class) != null
+                 || Context.getConfig().getBoolean("decoder.ignoreSessionCache")) {
+             long deviceId = findDeviceId(remoteAddress, uniqueIds);
+             if (deviceId != 0) {
+51: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -54,9 +54,7 @@ public class Dashboard extends JPanel {
+     public void updateDisplayedValues(ReadOnlyInputPacket inputPacket) {
+         gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+-        speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
+     }
+ 
+     /**
+@@ -100,7 +98,7 @@ public class Dashboard extends JPanel {
+      * @param g {@link Graphics} object that can draw to the canvas
+      */
+     protected void paintComponent(Graphics g) {
+-        super.paintComponent(g);
++        final int minRpmValue = 0;
+         g.setColor(Color.BLACK);
+         g.drawOval(speedMeterX, speedMeterY, meterWidth, meterHeight);
+         g.drawOval(tachoMeterX, tachoMeterY, meterWidth, meterHeight);
+52: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_0_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+53: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        speedAngle = calculateSpeedometer(0);
+     }
+ 
+     /**
+@@ -88,10 +88,10 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setStringPainted(true);
+ 
+         add(progressBarsPanel);
+-        progressBarsPanel.add(gasLabel);
+         progressBarsPanel.add(gasProgressBar);
+         progressBarsPanel.add(breakLabel);
+         progressBarsPanel.add(breakProgressBar);
++		progressBarsPanel.add(breakProgressBar);
+     }
+ 
+     /**
+54: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_1_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+55: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        final int maxRpmValue = 10000;
+     }
+ 
+     /**
+@@ -121,7 +121,8 @@ public class Dashboard extends JPanel {
+         final int minRpmValue = 0;
+         final int maxRpmValue = 10000;
+         final int minRpmMeter = -75;
+-        final int maxRpmMeter = 255;
++        progressBarsPanel.add(breakLabel);
++		final int maxRpmMeter = 255;
+         int newrpm = maxRpmValue - rpm;
+ 
+         return (newrpm - minRpmValue) * (maxRpmMeter - minRpmMeter) / (maxRpmValue - minRpmValue) + minRpmMeter;
+56: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_2_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+57: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -52,11 +52,11 @@ public class Dashboard extends JPanel {
+      * @param inputPacket Contains all the required values coming from input.
+      */
+     public void updateDisplayedValues(ReadOnlyInputPacket inputPacket) {
+-        gasProgressBar.setValue(inputPacket.getGasPedalPosition());
++        final int minSpeedValue = 0;
++		gasProgressBar.setValue(inputPacket.getGasPedalPosition());
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
+     }
+ 
+     /**
+@@ -121,7 +121,8 @@ public class Dashboard extends JPanel {
+         final int minRpmValue = 0;
+         final int maxRpmValue = 10000;
+         final int minRpmMeter = -75;
+-        final int maxRpmMeter = 255;
++        final int minSpeedMeter = -75;
++		final int maxRpmMeter = 255;
+         int newrpm = maxRpmValue - rpm;
+ 
+         return (newrpm - minRpmValue) * (maxRpmMeter - minRpmMeter) / (maxRpmValue - minRpmValue) + minRpmMeter;
+58: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_3_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**
+59: _Auto\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Auto\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,6 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
+     }
+ 
+     /**
+@@ -83,7 +82,7 @@ public class Dashboard extends JPanel {
+                 progressBarsPanelHeight);
+ 
+         gasLabel.setText("gas pedal");
+-        breakLabel.setText("break pedal");
++        final int minRpmMeter = -75;
+         gasProgressBar.setStringPainted(true);
+         breakProgressBar.setStringPainted(true);
+ 
+60: _Manual\--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Buggy\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bears_Result_32_Packages\\RSRepair-Bears-SzFMV2018-Tavasz-AutomatedCar-351742666-351759763_4_Manual\\src\\hu\\oe\\nik\\szfmv\\visualization\\Dashboard.java"	
+@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
+         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
+         speedAngle = calculateSpeedometer(0);
+         rpmAngle = calculateTachometer(0);
+-        paintComponent(getGraphics());
++        repaint();
+     }
+ 
+     /**

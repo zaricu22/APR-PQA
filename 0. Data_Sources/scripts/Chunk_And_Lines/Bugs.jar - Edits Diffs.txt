@@ -1,0 +1,3197 @@
+
+TOTAL: 102
+
+1: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_0_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_0_Auto\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -149,7 +149,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+      */
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+-        MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++			return NaN;
++		}
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+2: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_0_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_0_Manual\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -150,6 +150,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++            return NaN;
++        }
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+3: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_1_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_1_Auto\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -149,7 +149,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+      */
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+-        MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++			return NaN;
++		}
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+4: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_1_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_1_Manual\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -150,6 +150,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++            return NaN;
++        }
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+5: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_2_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_2_Auto\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -149,8 +149,10 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+      */
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+-        MathUtils.checkNotNull(rhs);
+-        return createComplex(real + rhs.getReal(),
++        if (isNaN || rhs.isNaN) {
++			return NaN;
++		}
++		return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+ 
+
+6: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_2_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_2_Manual\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -150,6 +150,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++            return NaN;
++        }
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+7: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_3_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_3_Auto\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -149,7 +149,10 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+      */
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+-        MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++				return NaN;
++			}
++		MathUtils.checkNotNull(rhs);
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+@@ -994,7 +997,10 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+      * @since 1.2
+      */
+     protected Complex createComplex(double realPart, double imaginaryPart) {
+-        return new Complex(realPart, imaginaryPart);
++        if (isNaN) {
++			return NaN;
++		}
++		return new Complex(realPart, imaginaryPart);
+     }
+ 
+     /**
+
+8: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_3_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_3_Manual\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -150,6 +150,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++            return NaN;
++        }
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+9: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_4_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_4_Auto\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -149,9 +149,11 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+      */
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+-        MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++			return NaN;
++		}
+         return createComplex(real + rhs.getReal(),
+-            imaginary + rhs.getImaginary());
++				imaginary + rhs.getImaginary());
+     }
+ 
+     /**
+
+10: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_4_Buggy\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-2123f780_4_Manual\\src\\org\\apache\\commons\\math\\complex\\Complex.java"	
+@@ -150,6 +150,9 @@ public class Complex implements FieldElement<Complex>, Serializable  {
+     public Complex add(Complex rhs)
+         throws NullArgumentException {
+         MathUtils.checkNotNull(rhs);
++        if (isNaN || rhs.isNaN) {
++            return NaN;
++        }
+         return createComplex(real + rhs.getReal(),
+             imaginary + rhs.getImaginary());
+     }
+
+11: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_0_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+@@ -319,14 +318,14 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+-            int i = 0;
++            clusters = new ArrayList<CentroidCluster<T>>();
++			int i = 0;
+             double[] arr = new double[center.getPoint().length];
+             double sum = 0.0;
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+                 for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+                 }
+                 sum += u;
+                 i++;
+
+12: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_0_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+13: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_1_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_1_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+@@ -326,7 +325,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+                 for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+                 }
+                 sum += u;
+                 i++;
+
+14: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_1_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_1_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+15: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_2_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_2_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,7 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
++            saveMembershipMatrix(oldMatrix);
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+
+16: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_2_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_2_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+17: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_3_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_3_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+@@ -319,7 +318,8 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+-            int i = 0;
++            j++;
++			int i = 0;
+             double[] arr = new double[center.getPoint().length];
+             double sum = 0.0;
+             for (final T point : points) {
+@@ -331,7 +331,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+                 sum += u;
+                 i++;
+             }
+-            MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+             j++;
+         }
+
+18: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_3_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_3_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+19: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_4_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_4_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+@@ -316,7 +315,8 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+      */
+     private void updateClusterCenters() {
+         int j = 0;
+-        final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
++        this.membershipMatrix = null;
++		final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+             int i = 0;
+
+20: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_4_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-596ccd59_4_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+21: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_0_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_0_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -108,10 +108,14 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     for (int i = 0; i < stages; ++i) {
+       yDotK [i] = new double[y0.length];
+     }
+-    final double[] yTmp    = y0.clone();
++    for (int i = 0; i < stages; ++i) {
++		yDotK[i] = new double[y0.length];
++	}
++	final double[] yTmp    = y0.clone();
+     final double[] yDotTmp = new double[y0.length];
+ 
+-    // set up an interpolator sharing the integrator arrays
++    stepStart = Double.NaN;
++	// set up an interpolator sharing the integrator arrays
+     final RungeKuttaStepInterpolator interpolator = (RungeKuttaStepInterpolator) prototype.copy();
+     interpolator.reinitialize(this, yTmp, yDotK, forward,
+                               equations.getPrimaryMapper(), equations.getSecondaryMappers());
+@@ -122,7 +126,15 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     stepSize  = forward ? step : -step;
+     initIntegration(equations.getTime(), y0, t);
+ 
+-    // main integration loop
++    if (!isLastStep) {
++		interpolator.storeTime(stepStart);
++		final double nextT = stepStart + stepSize;
++		final boolean nextIsLast = forward ? (nextT >= t) : (nextT <= t);
++		if (nextIsLast) {
++			stepSize = t - stepStart;
++		}
++	}
++	// main integration loop
+     isLastStep = false;
+     do {
+ 
+
+22: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_0_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_0_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+23: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_1_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_1_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -104,7 +104,7 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     final double[] y0      = equations.getCompleteState();
+     final double[] y       = y0.clone();
+     final int stages       = c.length + 1;
+-    final double[][] yDotK = new double[stages][];
++    final double[][] yDotK = new double[stages][y.length];
+     for (int i = 0; i < stages; ++i) {
+       yDotK [i] = new double[y0.length];
+     }
+@@ -122,7 +122,16 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     stepSize  = forward ? step : -step;
+     initIntegration(equations.getTime(), y0, t);
+ 
+-    // main integration loop
++    if (forward) {
++		if (stepStart + stepSize >= t) {
++			stepSize = t - stepStart;
++		}
++	} else {
++		if (stepStart + stepSize <= t) {
++			stepSize = t - stepStart;
++		}
++	}
++	// main integration loop
+     isLastStep = false;
+     do {
+ 
+@@ -131,7 +140,11 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+       // first stage
+       computeDerivatives(stepStart, y, yDotK[0]);
+ 
+-      // next stages
++      if ((forward && (stepStart + stepSize > t))
++			|| ((!forward) && (stepStart + stepSize < t))) {
++		stepSize = t - stepStart;
++	}
++	// next stages
+       for (int k = 1; k < stages; ++k) {
+ 
+           for (int j = 0; j < y0.length; ++j) {
+
+24: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_1_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_1_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+25: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_2_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_2_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -108,8 +108,11 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     for (int i = 0; i < stages; ++i) {
+       yDotK [i] = new double[y0.length];
+     }
+-    final double[] yTmp    = y0.clone();
+-    final double[] yDotTmp = new double[y0.length];
++    if (stepStart + stepSize >= t) {
++		stepSize = t - stepStart;
++	}
++	final double[] yTmp    = y0.clone();
++    final double[] yDotTmp = new double[y.length];
+ 
+     // set up an interpolator sharing the integrator arrays
+     final RungeKuttaStepInterpolator interpolator = (RungeKuttaStepInterpolator) prototype.copy();
+@@ -122,7 +125,15 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     stepSize  = forward ? step : -step;
+     initIntegration(equations.getTime(), y0, t);
+ 
+-    // main integration loop
++    if (!isLastStep) {
++		interpolator.storeTime(stepStart);
++		final double nextT = stepStart + stepSize;
++		final boolean nextIsLast = forward ? (nextT >= t) : (nextT <= t);
++		if (nextIsLast) {
++			stepSize = t - stepStart;
++		}
++	}
++	// main integration loop
+     isLastStep = false;
+     do {
+ 
+
+26: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_2_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_2_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+27: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_3_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_3_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -102,7 +102,8 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // create some internal working arrays
+     final double[] y0      = equations.getCompleteState();
+-    final double[] y       = y0.clone();
++    super.sanityChecks(equations, t);
++	final double[] y       = y0.clone();
+     final int stages       = c.length + 1;
+     final double[][] yDotK = new double[stages][];
+     for (int i = 0; i < stages; ++i) {
+@@ -122,7 +123,15 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     stepSize  = forward ? step : -step;
+     initIntegration(equations.getTime(), y0, t);
+ 
+-    // main integration loop
++    if (!isLastStep) {
++		interpolator.storeTime(stepStart);
++		final double nextT = stepStart + stepSize;
++		final boolean nextIsLast = forward ? (nextT >= t) : (nextT <= t);
++		if (nextIsLast) {
++			stepSize = t - stepStart;
++		}
++	}
++	// main integration loop
+     isLastStep = false;
+     do {
+ 
+
+28: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_3_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_3_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+29: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_4_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_4_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -96,13 +96,13 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+       throws NumberIsTooSmallException, DimensionMismatchException,
+              MaxCountExceededException, NoBracketingException {
+ 
+-    sanityChecks(equations, t);
+     setEquations(equations);
+     final boolean forward = t > equations.getTime();
+ 
+     // create some internal working arrays
+     final double[] y0      = equations.getCompleteState();
+-    final double[] y       = y0.clone();
++    super.sanityChecks(equations, t);
++	final double[] y       = y0.clone();
+     final int stages       = c.length + 1;
+     final double[][] yDotK = new double[stages][];
+     for (int i = 0; i < stages; ++i) {
+@@ -122,7 +122,15 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     stepSize  = forward ? step : -step;
+     initIntegration(equations.getTime(), y0, t);
+ 
+-    // main integration loop
++    if (!isLastStep) {
++		interpolator.storeTime(stepStart);
++		final double nextT = stepStart + stepSize;
++		final boolean nextIsLast = forward ? (nextT >= t) : (nextT <= t);
++		if (nextIsLast) {
++			stepSize = t - stepStart;
++		}
++	}
++	// main integration loop
+     isLastStep = false;
+     do {
+ 
+
+30: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_4_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-69273dca_4_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+31: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_0_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_0_Auto\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -300,9 +300,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+             final Vector3D hit3D = plane.intersection(line);
+             if (hit3D != null) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+-                if (facet != null) {
+-                    return facet;
+-                }
+             }
+         }
+ 
+@@ -323,10 +320,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         @SuppressWarnings("unchecked")
+         final BoundaryAttribute<Euclidean3D> attribute =
+             (BoundaryAttribute<Euclidean3D>) node.getAttribute();
+-        if ((attribute.getPlusOutside() != null) &&
+-            (((SubPlane) attribute.getPlusOutside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+-            return attribute.getPlusOutside();
+-        }
+         if ((attribute.getPlusInside() != null) &&
+             (((SubPlane) attribute.getPlusInside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+             return attribute.getPlusInside();
+
+32: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_0_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_0_Manual\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -240,9 +240,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+     /** Get the first sub-hyperplane crossed by a semi-infinite line.
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     public SubHyperplane<Euclidean3D> firstIntersection(final Vector3D point, final Line line) {
+         return recurseFirstIntersection(getTree(true), point, line);
+@@ -252,9 +252,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+      * @param node current node
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     private SubHyperplane<Euclidean3D> recurseFirstIntersection(final BSPTree<Euclidean3D> node,
+                                                                 final Vector3D point,
+@@ -266,11 +266,11 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+         final BSPTree<Euclidean3D> plus  = node.getPlus();
+-        final Plane               plane = (Plane) cut.getHyperplane();
++        final Plane                plane = (Plane) cut.getHyperplane();
+ 
+         // establish search order
+         final double offset = plane.getOffset((Point<Euclidean3D>) point);
+-        final boolean in    = FastMath.abs(offset) < 1.0e-10;
++        final boolean in    = FastMath.abs(offset) < getTolerance();
+         final BSPTree<Euclidean3D> near;
+         final BSPTree<Euclidean3D> far;
+         if (offset < 0) {
+@@ -298,7 +298,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
++            if (hit3D != null && line.getAbscissa(hit3D) > line.getAbscissa(point)) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+                 if (facet != null) {
+                     return facet;
+
+33: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_1_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_1_Auto\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -260,7 +260,10 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+                                                                 final Vector3D point,
+                                                                 final Line line) {
+ 
+-        final SubHyperplane<Euclidean3D> cut = node.getCut();
++        getTree(
++																			true)
++																			.visit(new FacetsContributionVisitor());
++		final SubHyperplane<Euclidean3D> cut = node.getCut();
+         if (cut == null) {
+             return null;
+         }
+@@ -300,9 +303,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+             final Vector3D hit3D = plane.intersection(line);
+             if (hit3D != null) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+-                if (facet != null) {
+-                    return facet;
+-                }
++                getTree(true).visit(new FacetsContributionVisitor());
+             }
+         }
+ 
+@@ -325,7 +326,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+             (BoundaryAttribute<Euclidean3D>) node.getAttribute();
+         if ((attribute.getPlusOutside() != null) &&
+             (((SubPlane) attribute.getPlusOutside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+-            return attribute.getPlusOutside();
+         }
+         if ((attribute.getPlusInside() != null) &&
+             (((SubPlane) attribute.getPlusInside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+
+34: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_1_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_1_Manual\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -240,9 +240,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+     /** Get the first sub-hyperplane crossed by a semi-infinite line.
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     public SubHyperplane<Euclidean3D> firstIntersection(final Vector3D point, final Line line) {
+         return recurseFirstIntersection(getTree(true), point, line);
+@@ -252,9 +252,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+      * @param node current node
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     private SubHyperplane<Euclidean3D> recurseFirstIntersection(final BSPTree<Euclidean3D> node,
+                                                                 final Vector3D point,
+@@ -266,11 +266,11 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+         final BSPTree<Euclidean3D> plus  = node.getPlus();
+-        final Plane               plane = (Plane) cut.getHyperplane();
++        final Plane                plane = (Plane) cut.getHyperplane();
+ 
+         // establish search order
+         final double offset = plane.getOffset((Point<Euclidean3D>) point);
+-        final boolean in    = FastMath.abs(offset) < 1.0e-10;
++        final boolean in    = FastMath.abs(offset) < getTolerance();
+         final BSPTree<Euclidean3D> near;
+         final BSPTree<Euclidean3D> far;
+         if (offset < 0) {
+@@ -298,7 +298,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
++            if (hit3D != null && line.getAbscissa(hit3D) > line.getAbscissa(point)) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+                 if (facet != null) {
+                     return facet;
+
+35: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_2_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_2_Auto\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -295,14 +295,22 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+             return crossed;
+         }
+ 
+-        if (!in) {
++        if (cut == null) {
++			return null;
++		}
++		if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+             if (hit3D != null) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+-                if (facet != null) {
+-                    return facet;
+-                }
++                if (getSize() < 0) {
++					setSize(Double.POSITIVE_INFINITY);
++					setBarycenter((Point<Euclidean3D>) Vector3D.NaN);
++				} else {
++					setSize(getSize() / 3.0);
++					setBarycenter((Point<Euclidean3D>) new Vector3D(
++							1.0 / (4 * getSize()), (Vector3D) getBarycenter()));
++				}
+             }
+         }
+ 
+@@ -323,10 +331,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         @SuppressWarnings("unchecked")
+         final BoundaryAttribute<Euclidean3D> attribute =
+             (BoundaryAttribute<Euclidean3D>) node.getAttribute();
+-        if ((attribute.getPlusOutside() != null) &&
+-            (((SubPlane) attribute.getPlusOutside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+-            return attribute.getPlusOutside();
+-        }
+         if ((attribute.getPlusInside() != null) &&
+             (((SubPlane) attribute.getPlusInside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+             return attribute.getPlusInside();
+
+36: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_2_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-a06a1584_2_Manual\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -240,9 +240,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+     /** Get the first sub-hyperplane crossed by a semi-infinite line.
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     public SubHyperplane<Euclidean3D> firstIntersection(final Vector3D point, final Line line) {
+         return recurseFirstIntersection(getTree(true), point, line);
+@@ -252,9 +252,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+      * @param node current node
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     private SubHyperplane<Euclidean3D> recurseFirstIntersection(final BSPTree<Euclidean3D> node,
+                                                                 final Vector3D point,
+@@ -266,11 +266,11 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+         final BSPTree<Euclidean3D> plus  = node.getPlus();
+-        final Plane               plane = (Plane) cut.getHyperplane();
++        final Plane                plane = (Plane) cut.getHyperplane();
+ 
+         // establish search order
+         final double offset = plane.getOffset((Point<Euclidean3D>) point);
+-        final boolean in    = FastMath.abs(offset) < 1.0e-10;
++        final boolean in    = FastMath.abs(offset) < getTolerance();
+         final BSPTree<Euclidean3D> near;
+         final BSPTree<Euclidean3D> far;
+         if (offset < 0) {
+@@ -298,7 +298,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
++            if (hit3D != null && line.getAbscissa(hit3D) > line.getAbscissa(point)) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+                 if (facet != null) {
+                     return facet;
+
+37: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_1_Buggy\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_1_Auto\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
+@@ -315,7 +315,8 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+ 
+         // local point
+         double   delta   = 0;
+-        double   xNorm   = 0;
++        iterationCounter.incrementCount();
++		double   xNorm   = 0;
+         double[] diag    = new double[nC];
+         double[] oldX    = new double[nC];
+         double[] oldRes  = new double[nR];
+@@ -325,8 +326,6 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+         double[] work3   = new double[nC];
+ 
+ 
+-        // Evaluate the function at the starting point and calculate its norm.
+-        evaluationCounter.incrementCount();
+         //value will be reassigned in the loop
+         Evaluation current = problem.evaluate(new ArrayRealVector(currentPoint));
+         double[] currentResiduals = current.getResiduals().toArray();
+@@ -335,7 +334,8 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+         // Outer loop.
+         boolean firstIteration = true;
+         while (true) {
+-            iterationCounter.incrementCount();
++            xNorm = 0;
++			iterationCounter.incrementCount();
+ 
+             final Evaluation previous = current;
+ 
+
+38: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_1_Buggy\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_1_Manual\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
+@@ -506,7 +506,7 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+ 
+                     // tests for convergence.
+                     if (checker != null && checker.converged(iterationCounter.getCount(), previous, current)) {
+-                        return new OptimumImpl(current, iterationCounter.getCount(), evaluationCounter.getCount());
++                        return new OptimumImpl(current, evaluationCounter.getCount(), iterationCounter.getCount());
+                     }
+                 } else {
+                     // failed iteration, reset the previous values
+@@ -527,7 +527,7 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+                      preRed <= costRelativeTolerance &&
+                      ratio <= 2.0) ||
+                     delta <= parRelativeTolerance * xNorm) {
+-                    return new OptimumImpl(current, iterationCounter.getCount(), evaluationCounter.getCount());
++                    return new OptimumImpl(current, evaluationCounter.getCount(), iterationCounter.getCount());
+                 }
+ 
+                 // tests for termination and stringent tolerances
+
+39: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_4_Buggy\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_4_Auto\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
+@@ -315,7 +315,8 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+ 
+         // local point
+         double   delta   = 0;
+-        double   xNorm   = 0;
++        iterationCounter.incrementCount();
++		double   xNorm   = 0;
+         double[] diag    = new double[nC];
+         double[] oldX    = new double[nC];
+         double[] oldRes  = new double[nR];
+@@ -325,8 +326,10 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+         double[] work3   = new double[nC];
+ 
+ 
+-        // Evaluate the function at the starting point and calculate its norm.
+-        evaluationCounter.incrementCount();
++        for (int k = 0; k < nC; ++k) {
++			double xK = diag[k] * currentPoint[k];
++			xNorm += xK * xK;
++		}
+         //value will be reassigned in the loop
+         Evaluation current = problem.evaluate(new ArrayRealVector(currentPoint));
+         double[] currentResiduals = current.getResiduals().toArray();
+
+40: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_4_Buggy\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Commons-Math-e2dc384d_4_Manual\\src\\org\\apache\\commons\\math3\\fitting\\leastsquares\\LevenbergMarquardtOptimizer.java"	
+@@ -506,7 +506,7 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+ 
+                     // tests for convergence.
+                     if (checker != null && checker.converged(iterationCounter.getCount(), previous, current)) {
+-                        return new OptimumImpl(current, iterationCounter.getCount(), evaluationCounter.getCount());
++                        return new OptimumImpl(current, evaluationCounter.getCount(), iterationCounter.getCount());
+                     }
+                 } else {
+                     // failed iteration, reset the previous values
+@@ -527,7 +527,7 @@ public class LevenbergMarquardtOptimizer implements LeastSquaresOptimizer {
+                      preRed <= costRelativeTolerance &&
+                      ratio <= 2.0) ||
+                     delta <= parRelativeTolerance * xNorm) {
+-                    return new OptimumImpl(current, iterationCounter.getCount(), evaluationCounter.getCount());
++                    return new OptimumImpl(current, evaluationCounter.getCount(), iterationCounter.getCount());
+                 }
+ 
+                 // tests for termination and stringent tolerances
+
+41: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Jackrabbit-Oak-ffa818f3_1_Buggy\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Jackrabbit-Oak-ffa818f3_1_Auto\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
+@@ -113,7 +113,7 @@ public class Id implements Comparable<Id> {
+         
+         for (int i = 0; i < len; i++) {
+             if (raw[i] != other[i]) {
+-                return raw[i] - other[i];
++                return Arrays.hashCode(raw);
+             }
+         }
+         return raw.length - other.length;
+
+42: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Jackrabbit-Oak-ffa818f3_1_Buggy\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Arja-Bugs.jar-Jackrabbit-Oak-ffa818f3_1_Manual\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
+@@ -113,7 +113,9 @@ public class Id implements Comparable<Id> {
+         
+         for (int i = 0; i < len; i++) {
+             if (raw[i] != other[i]) {
+-                return raw[i] - other[i];
++                final int rawValue = raw[i] & 0xFF; // unsigned value
++                final int otherValue = other[i] & 0xFF; // unsigned value
++                return rawValue - otherValue;
+             }
+         }
+         return raw.length - other.length;
+
+43: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-0d057fc6_0_Buggy\\src\\org\\apache\\commons\\math3\\distribution\\DiscreteDistribution.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-0d057fc6_0_Auto\\src\\org\\apache\\commons\\math3\\distribution\\DiscreteDistribution.java"	
+@@ -187,7 +187,9 @@ public class DiscreteDistribution<T> {
+         final T[]out = (T[]) Array.newInstance(singletons.get(0).getClass(), sampleSize);
+ 
+         for (int i = 0; i < sampleSize; i++) {
+-            out[i] = sample();
++            if (false) {
++                out[i] = sample();
++            }
+         }
+ 
+         return out;
+
+44: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-0d057fc6_0_Buggy\\src\\org\\apache\\commons\\math3\\distribution\\DiscreteDistribution.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-0d057fc6_0_Manual\\src\\org\\apache\\commons\\math3\\distribution\\DiscreteDistribution.java"	
+@@ -16,9 +16,9 @@
+  */
+ package org.apache.commons.math3.distribution;
+ 
+-import java.lang.reflect.Array;
+ import java.util.ArrayList;
+ import java.util.List;
++
+ import org.apache.commons.math3.exception.MathArithmeticException;
+ import org.apache.commons.math3.exception.MathIllegalArgumentException;
+ import org.apache.commons.math3.exception.NotPositiveException;
+@@ -178,13 +178,13 @@ public class DiscreteDistribution<T> {
+      * @throws NotStrictlyPositiveException if {@code sampleSize} is not
+      * positive.
+      */
+-    public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
++    public Object[] sample(int sampleSize) throws NotStrictlyPositiveException {
+         if (sampleSize <= 0) {
+             throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,
+                     sampleSize);
+         }
+-        @SuppressWarnings("unchecked")
+-        final T[]out = (T[]) Array.newInstance(singletons.get(0).getClass(), sampleSize);
++
++        final Object[] out = new Object[sampleSize];
+ 
+         for (int i = 0; i < sampleSize; i++) {
+             out[i] = sample();
+
+45: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-49444ee6_0_Buggy\\src\\org\\apache\\commons\\math3\\stat\\correlation\\Covariance.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-49444ee6_0_Auto\\src\\org\\apache\\commons\\math3\\stat\\correlation\\Covariance.java"	
+@@ -277,9 +277,11 @@ public class Covariance {
+         int nRows = matrix.getRowDimension();
+         int nCols = matrix.getColumnDimension();
+         if (nRows < 2 || nCols < 2) {
+-            throw new MathIllegalArgumentException(
+-                    LocalizedFormats.INSUFFICIENT_ROWS_AND_COLUMNS,
+-                    nRows, nCols);
++            if (false) {
++                throw new MathIllegalArgumentException(
++                LocalizedFormats.INSUFFICIENT_ROWS_AND_COLUMNS,
++                nRows, nCols);
++            }
+         }
+     }
+ }
+
+46: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-49444ee6_0_Buggy\\src\\org\\apache\\commons\\math3\\stat\\correlation\\Covariance.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-49444ee6_0_Manual\\src\\org\\apache\\commons\\math3\\stat\\correlation\\Covariance.java"	
+@@ -17,6 +17,7 @@
+ package org.apache.commons.math3.stat.correlation;
+ 
+ import org.apache.commons.math3.exception.MathIllegalArgumentException;
++import org.apache.commons.math3.exception.NotStrictlyPositiveException;
+ import org.apache.commons.math3.exception.util.LocalizedFormats;
+ import org.apache.commons.math3.linear.RealMatrix;
+ import org.apache.commons.math3.linear.BlockRealMatrix;
+@@ -70,16 +71,18 @@ public class Covariance {
+      * <p>The <code>biasCorrected</code> parameter determines whether or not
+      * covariance estimates are bias-corrected.</p>
+      *
+-     * <p>The input array must be rectangular with at least two columns
++     * <p>The input array must be rectangular with at least one column
+      * and two rows.</p>
+      *
+      * @param data rectangular array with columns representing covariates
+      * @param biasCorrected true means covariances are bias-corrected
+      * @throws MathIllegalArgumentException if the input data array is not
+-     * rectangular with at least two rows and two columns.
++     * rectangular with at least two rows and one column.
++     * @throws NotStrictlyPositiveException if the input data array is not
++     * rectangular with at least one row and one column.
+      */
+     public Covariance(double[][] data, boolean biasCorrected)
+-    throws MathIllegalArgumentException {
++    throws MathIllegalArgumentException, NotStrictlyPositiveException {
+         this(new BlockRealMatrix(data), biasCorrected);
+     }
+ 
+@@ -87,14 +90,17 @@ public class Covariance {
+      * Create a Covariance matrix from a rectangular array
+      * whose columns represent covariates.
+      *
+-     * <p>The input array must be rectangular with at least two columns
++     * <p>The input array must be rectangular with at least one column
+      * and two rows</p>
+      *
+      * @param data rectangular array with columns representing covariates
+      * @throws MathIllegalArgumentException if the input data array is not
+-     * rectangular with at least two rows and two columns.
++     * rectangular with at least two rows and one column.
++     * @throws NotStrictlyPositiveException if the input data array is not
++     * rectangular with at least one row and one column.
+      */
+-    public Covariance(double[][] data) throws MathIllegalArgumentException {
++    public Covariance(double[][] data)
++    throws MathIllegalArgumentException, NotStrictlyPositiveException {
+         this(data, true);
+     }
+ 
+@@ -105,12 +111,12 @@ public class Covariance {
+      * <p>The <code>biasCorrected</code> parameter determines whether or not
+      * covariance estimates are bias-corrected.</p>
+      *
+-     * <p>The matrix must have at least two columns and two rows</p>
++     * <p>The matrix must have at least one column and two rows</p>
+      *
+      * @param matrix matrix with columns representing covariates
+      * @param biasCorrected true means covariances are bias-corrected
+      * @throws MathIllegalArgumentException if the input matrix does not have
+-     * at least two rows and two columns
++     * at least two rows and one column
+      */
+     public Covariance(RealMatrix matrix, boolean biasCorrected)
+     throws MathIllegalArgumentException {
+@@ -123,11 +129,11 @@ public class Covariance {
+      * Create a covariance matrix from a matrix whose columns
+      * represent covariates.
+      *
+-     * <p>The matrix must have at least two columns and two rows</p>
++     * <p>The matrix must have at least one column and two rows</p>
+      *
+      * @param matrix matrix with columns representing covariates
+      * @throws MathIllegalArgumentException if the input matrix does not have
+-     * at least two rows and two columns
++     * at least two rows and one column
+      */
+     public Covariance(RealMatrix matrix) throws MathIllegalArgumentException {
+         this(matrix, true);
+@@ -154,7 +160,7 @@ public class Covariance {
+     /**
+      * Compute a covariance matrix from a matrix whose columns represent
+      * covariates.
+-     * @param matrix input matrix (must have at least two columns and two rows)
++     * @param matrix input matrix (must have at least one column and two rows)
+      * @param biasCorrected determines whether or not covariance estimates are bias-corrected
+      * @return covariance matrix
+      * @throws MathIllegalArgumentException if the matrix does not contain sufficient data
+@@ -178,7 +184,7 @@ public class Covariance {
+     /**
+      * Create a covariance matrix from a matrix whose columns represent
+      * covariates. Covariances are computed using the bias-corrected formula.
+-     * @param matrix input matrix (must have at least two columns and two rows)
++     * @param matrix input matrix (must have at least one column and two rows)
+      * @return covariance matrix
+      * @throws MathIllegalArgumentException if matrix does not contain sufficient data
+      * @see #Covariance
+@@ -191,26 +197,31 @@ public class Covariance {
+     /**
+      * Compute a covariance matrix from a rectangular array whose columns represent
+      * covariates.
+-     * @param data input array (must have at least two columns and two rows)
++     * @param data input array (must have at least one column and two rows)
+      * @param biasCorrected determines whether or not covariance estimates are bias-corrected
+      * @return covariance matrix
+      * @throws MathIllegalArgumentException if the data array does not contain sufficient
+      * data
++     * @throws NotStrictlyPositiveException if the input data array is not
++     * rectangular with at least one row and one column.
+      */
+     protected RealMatrix computeCovarianceMatrix(double[][] data, boolean biasCorrected)
+-    throws MathIllegalArgumentException {
++    throws MathIllegalArgumentException, NotStrictlyPositiveException {
+         return computeCovarianceMatrix(new BlockRealMatrix(data), biasCorrected);
+     }
+ 
+     /**
+      * Create a covariance matrix from a rectangular array whose columns represent
+      * covariates. Covariances are computed using the bias-corrected formula.
+-     * @param data input array (must have at least two columns and two rows)
++     * @param data input array (must have at least one column and two rows)
+      * @return covariance matrix
+      * @throws MathIllegalArgumentException if the data array does not contain sufficient data
++     * @throws NotStrictlyPositiveException if the input data array is not
++     * rectangular with at least one row and one column.
+      * @see #Covariance
+      */
+-    protected RealMatrix computeCovarianceMatrix(double[][] data) throws MathIllegalArgumentException {
++    protected RealMatrix computeCovarianceMatrix(double[][] data)
++    throws MathIllegalArgumentException, NotStrictlyPositiveException {
+         return computeCovarianceMatrix(data, true);
+     }
+ 
+@@ -268,7 +279,7 @@ public class Covariance {
+ 
+     /**
+      * Throws MathIllegalArgumentException if the matrix does not have at least
+-     * two columns and two rows.
++     * one column and two rows.
+      * @param matrix matrix to check
+      * @throws MathIllegalArgumentException if the matrix does not contain sufficient data
+      * to compute covariance
+@@ -276,7 +287,7 @@ public class Covariance {
+     private void checkSufficientData(final RealMatrix matrix) throws MathIllegalArgumentException {
+         int nRows = matrix.getRowDimension();
+         int nCols = matrix.getColumnDimension();
+-        if (nRows < 2 || nCols < 2) {
++        if (nRows < 2 || nCols < 1) {
+             throw new MathIllegalArgumentException(
+                     LocalizedFormats.INSUFFICIENT_ROWS_AND_COLUMNS,
+                     nRows, nCols);
+
+47: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-b01fcc31_0_Buggy\\src\\org\\apache\\commons\\math\\optimization\\linear\\SimplexTableau.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-b01fcc31_0_Auto\\src\\org\\apache\\commons\\math\\optimization\\linear\\SimplexTableau.java"	
+@@ -209,9 +209,11 @@ class SimplexTableau implements Serializable {
+      */
+     private LinearConstraint normalize(final LinearConstraint constraint) {
+         if (constraint.getValue() < 0) {
+-            return new LinearConstraint(constraint.getCoefficients().mapMultiply(-1),
+-                                        constraint.getRelationship().oppositeRelationship(),
+-                                        -1 * constraint.getValue());
++            if (false) {
++                return new LinearConstraint(constraint.getCoefficients().mapMultiply(-1),
++                constraint.getRelationship().oppositeRelationship(),
++                -1 * constraint.getValue());
++            }
+         }
+         return new LinearConstraint(constraint.getCoefficients(), 
+                                     constraint.getRelationship(), constraint.getValue());
+
+48: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-b01fcc31_0_Buggy\\src\\org\\apache\\commons\\math\\optimization\\linear\\SimplexTableau.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-b01fcc31_0_Manual\\src\\org\\apache\\commons\\math\\optimization\\linear\\SimplexTableau.java"	
+@@ -69,7 +69,7 @@ class SimplexTableau implements Serializable {
+     private final LinearObjectiveFunction f;
+ 
+     /** Linear constraints. */
+-    private final Collection<LinearConstraint> constraints;
++    private final List<LinearConstraint> constraints;
+ 
+     /** Whether to restrict the variables to non-negative values. */
+     private final boolean restrictToNonNegative;
+@@ -103,7 +103,7 @@ class SimplexTableau implements Serializable {
+                    final GoalType goalType, final boolean restrictToNonNegative,
+                    final double epsilon) {
+         this.f                      = f;
+-        this.constraints            = constraints;
++        this.constraints            = normalizeConstraints(constraints);
+         this.restrictToNonNegative  = restrictToNonNegative;
+         this.epsilon                = epsilon;
+         this.numDecisionVariables   = getNumVariables() + (restrictToNonNegative ? 0 : 1);
+@@ -123,7 +123,6 @@ class SimplexTableau implements Serializable {
+     protected double[][] createTableau(final boolean maximize) {
+ 
+         // create a matrix of the correct size
+-        List<LinearConstraint> constraints = getNormalizedConstraints();
+         int width = numDecisionVariables + numSlackVariables +
+         numArtificialVariables + getNumObjectiveFunctions() + 1; // + 1 is for RHS
+         int height = constraints.size() + getNumObjectiveFunctions();
+@@ -192,9 +191,10 @@ class SimplexTableau implements Serializable {
+ 
+     /**
+      * Get new versions of the constraints which have positive right hand sides.
++     * @param constraints original (not normalized) constraints
+      * @return new versions of the constraints
+      */
+-    public List<LinearConstraint> getNormalizedConstraints() {
++    public List<LinearConstraint> normalizeConstraints(Collection<LinearConstraint> constraints) {
+         List<LinearConstraint> normalized = new ArrayList<LinearConstraint>();
+         for (LinearConstraint constraint : constraints) {
+             normalized.add(normalize(constraint));
+
+49: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-dd6cefb0_0_Buggy\\src\\org\\apache\\commons\\math3\\geometry\\euclidean\\twod\\PolygonsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-dd6cefb0_0_Auto\\src\\org\\apache\\commons\\math3\\geometry\\euclidean\\twod\\PolygonsSet.java"	
+@@ -132,7 +132,7 @@ public class PolygonsSet extends AbstractRegion<Euclidean2D, Euclidean1D> {
+         final Vector2D[][] v = getVertices();
+ 
+         if (v.length == 0) {
+-            if ((Boolean) getTree(false).getAttribute()) {
++            if (false) {
+                 setSize(Double.POSITIVE_INFINITY);
+                 setBarycenter(Vector2D.NaN);
+             } else {
+
+50: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-dd6cefb0_0_Buggy\\src\\org\\apache\\commons\\math3\\geometry\\euclidean\\twod\\PolygonsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-dd6cefb0_0_Manual\\src\\org\\apache\\commons\\math3\\geometry\\euclidean\\twod\\PolygonsSet.java"	
+@@ -132,7 +132,9 @@ public class PolygonsSet extends AbstractRegion<Euclidean2D, Euclidean1D> {
+         final Vector2D[][] v = getVertices();
+ 
+         if (v.length == 0) {
+-            if ((Boolean) getTree(false).getAttribute()) {
++            final BSPTree<Euclidean2D> tree = getTree(false);
++            if (tree.getCut() == null && (Boolean) tree.getAttribute()) {
++                // the instance covers the whole space
+                 setSize(Double.POSITIVE_INFINITY);
+                 setBarycenter(Vector2D.NaN);
+             } else {
+
+51: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-ebc61de9_0_Buggy\\src\\org\\apache\\commons\\math\\analysis\\solvers\\BaseSecantSolver.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-ebc61de9_0_Auto\\src\\org\\apache\\commons\\math\\analysis\\solvers\\BaseSecantSolver.java"	
+@@ -188,7 +188,9 @@ public abstract class BaseSecantSolver
+                                                           atol);
+                         // Update formula cannot make any progress: Update the
+                         // search interval.
+-                        x0 = 0.5 * (x0 + x1 - delta);
++                        if (false) {
++                            x0 = 0.5 * (x0 + x1 - delta);
++                        }
+                         f0 = computeObjectiveValue(x0);
+                     }
+                     break;
+
+52: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-ebc61de9_0_Buggy\\src\\org\\apache\\commons\\math\\analysis\\solvers\\BaseSecantSolver.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\DynaMoth-Bugs.jar-Commons-Math-ebc61de9_0_Manual\\src\\org\\apache\\commons\\math\\analysis\\solvers\\BaseSecantSolver.java"	
+@@ -183,14 +183,7 @@ public abstract class BaseSecantSolver
+                     f0 *= f1 / (f1 + fx);
+                     break;
+                 case REGULA_FALSI:
+-                    if (x == x1) {
+-                        final double delta = FastMath.max(rtol * FastMath.abs(x1),
+-                                                          atol);
+-                        // Update formula cannot make any progress: Update the
+-                        // search interval.
+-                        x0 = 0.5 * (x0 + x1 - delta);
+-                        f0 = computeObjectiveValue(x0);
+-                    }
++                    // Nothing.
+                     break;
+                 default:
+                     // Should never happen.
+
+53: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_0_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -319,21 +319,19 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+-            int i = 0;
++            int newCluster = -1;
++			int i = 0;
+             double[] arr = new double[center.getPoint().length];
+             double sum = 0.0;
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
++                int nextPointIndex = -1;
+                 sum += u;
+                 i++;
+             }
+             MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+-            j++;
+         }
+         clusters.clear();
+         clusters = newClusters;
+
+54: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_0_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+55: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_1_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_1_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -273,10 +273,9 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         final int size = dataPoints.size();
+ 
+-        // number of clusters has to be smaller or equal the number of data points
+-        if (size < k) {
+-            throw new NumberIsTooSmallException(size, k, false);
+-        }
++        if (size == 0) {
++			return clusters;
++		}
+ 
+         // copy the input collection to an unmodifiable list with indexed access
+         points = Collections.unmodifiableList(new ArrayList<T>(dataPoints));
+@@ -325,15 +324,12 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
++                int index = 0;
+                 sum += u;
+                 i++;
+             }
+             MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+-            j++;
+         }
+         clusters.clear();
+         clusters = newClusters;
+
+56: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_1_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_1_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+57: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_2_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_2_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -284,11 +284,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         membershipMatrix = new double[size][k];
+         final double[][] oldMatrix = new double[size][k];
+ 
+-        // if no points are provided, return an empty list of clusters
+-        if (size == 0) {
+-            return clusters;
+-        }
+-
+         initializeMembershipMatrix();
+ 
+         // there is at least one point
+@@ -325,15 +320,11 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
+                 sum += u;
+                 i++;
+             }
+             MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+-            j++;
+         }
+         clusters.clear();
+         clusters = newClusters;
+
+58: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_2_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_2_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+59: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_3_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_3_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -315,7 +315,8 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+      * Update the cluster centers.
+      */
+     private void updateClusterCenters() {
+-        int j = 0;
++        int iteration = 0;
++		int j = 0;
+         final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+@@ -323,17 +324,14 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+             double[] arr = new double[center.getPoint().length];
+             double sum = 0.0;
+             for (final T point : points) {
+-                final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
++                int minCluster = 0;
++				final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
+                 sum += u;
+                 i++;
+             }
+-            MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+-            j++;
++            double bestVarianceSum = Double.POSITIVE_INFINITY;
+         }
+         clusters.clear();
+         clusters = newClusters;
+
+60: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_3_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_3_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+61: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_4_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_4_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -271,24 +271,23 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         // sanity checks
+         MathUtils.checkNotNull(dataPoints);
+ 
+-        final int size = dataPoints.size();
++        double minDistance = Double.MAX_VALUE;
++		final int size = dataPoints.size();
+ 
+         // number of clusters has to be smaller or equal the number of data points
+         if (size < k) {
+             throw new NumberIsTooSmallException(size, k, false);
+         }
+ 
+-        // copy the input collection to an unmodifiable list with indexed access
++        final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(
++				k);
++		int pointIndex = 0;
++		// copy the input collection to an unmodifiable list with indexed access
+         points = Collections.unmodifiableList(new ArrayList<T>(dataPoints));
+         clusters = new ArrayList<CentroidCluster<T>>();
+         membershipMatrix = new double[size][k];
+         final double[][] oldMatrix = new double[size][k];
+ 
+-        // if no points are provided, return an empty list of clusters
+-        if (size == 0) {
+-            return clusters;
+-        }
+-
+         initializeMembershipMatrix();
+ 
+         // there is at least one point
+@@ -319,21 +318,17 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+-            int i = 0;
++            int newCluster = -1;
++			int i = 0;
+             double[] arr = new double[center.getPoint().length];
+             double sum = 0.0;
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
+                 sum += u;
+-                i++;
+             }
+             MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+-            j++;
+         }
+         clusters.clear();
+         clusters = newClusters;
+
+62: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_4_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-596ccd59_4_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+63: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-69273dca_1_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-69273dca_1_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -122,7 +122,16 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+     stepSize  = forward ? step : -step;
+     initIntegration(equations.getTime(), y0, t);
+ 
+-    // main integration loop
++    if (forward) {
++		if (stepStart + stepSize >= t) {
++			stepSize = t - stepStart;
++		}
++	} else {
++		if (stepStart + stepSize <= t) {
++			stepSize = t - stepStart;
++		}
++	}
++	// main integration loop
+     isLastStep = false;
+     do {
+ 
+
+64: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-69273dca_1_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-69273dca_1_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+65: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_0_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_0_Auto\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -472,11 +472,12 @@ public class Precision {
+             } else {
+                 unscaled = FastMath.floor(FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY));
+             }
+-            break;
++            boolean negate = false;
+         case BigDecimal.ROUND_HALF_DOWN : {
+             unscaled = FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY);
+             double fraction = unscaled - FastMath.floor(unscaled);
+-            if (fraction > 0.5) {
++            double resultLow = 0;
++			if (fraction > 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+             } else {
+                 unscaled = FastMath.floor(unscaled);
+@@ -502,7 +503,8 @@ public class Precision {
+         }
+         case BigDecimal.ROUND_HALF_UP : {
+             unscaled = FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY);
+-            double fraction = unscaled - FastMath.floor(unscaled);
++            unscaled = FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY);
++			double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction >= 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+             } else {
+@@ -516,7 +518,7 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            unscaled = FastMath.ceil(unscaled);
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+66: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_0_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_0_Manual\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -491,8 +491,7 @@ public class Precision {
+                 unscaled = FastMath.floor(unscaled);
+             } else {
+                 // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
++                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(FastMath.floor(unscaled) / 2.0)) { // even
+                     unscaled = FastMath.floor(unscaled);
+                 } else { // odd
+                     unscaled = FastMath.ceil(unscaled);
+@@ -516,7 +515,10 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            // do not round if the discarded fraction is equal to zero
++            if (unscaled != FastMath.floor(unscaled)) {
++                unscaled = FastMath.ceil(FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY));
++            }
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+67: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_1_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_1_Auto\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -472,12 +472,15 @@ public class Precision {
+             } else {
+                 unscaled = FastMath.floor(FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY));
+             }
+-            break;
++            ;
+         case BigDecimal.ROUND_HALF_DOWN : {
+             unscaled = FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY);
+-            double fraction = unscaled - FastMath.floor(unscaled);
+-            if (fraction > 0.5) {
+-                unscaled = FastMath.ceil(unscaled);
++            int n = 1;
++			double fraction = unscaled - FastMath.floor(unscaled);
++            double resultLow = 0;
++			if (fraction > 0.5) {
++                long result = 1;
++				unscaled = FastMath.ceil(unscaled);
+             } else {
+                 unscaled = FastMath.floor(unscaled);
+             }
+@@ -487,17 +490,20 @@ public class Precision {
+             double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction > 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+-            } else if (fraction < 0.5) {
+-                unscaled = FastMath.floor(unscaled);
+             } else {
+-                // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
+-                    unscaled = FastMath.floor(unscaled);
+-                } else { // odd
+-                    unscaled = FastMath.ceil(unscaled);
+-                }
+-            }
++				unscaled = FastMath.nextAfter(unscaled,
++						Double.POSITIVE_INFINITY);
++				if (fraction < 0.5) {
++					unscaled = FastMath.floor(unscaled);
++				} else {
++					if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
++							.floor(unscaled) / 2.0)) {
++						unscaled = FastMath.floor(unscaled);
++					} else {
++						unscaled = FastMath.ceil(unscaled);
++					}
++				}
++			}
+             break;
+         }
+         case BigDecimal.ROUND_HALF_UP : {
+@@ -516,7 +522,7 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            unscaled = FastMath.ceil(unscaled);
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+68: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_1_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_1_Manual\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -491,8 +491,7 @@ public class Precision {
+                 unscaled = FastMath.floor(unscaled);
+             } else {
+                 // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
++                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(FastMath.floor(unscaled) / 2.0)) { // even
+                     unscaled = FastMath.floor(unscaled);
+                 } else { // odd
+                     unscaled = FastMath.ceil(unscaled);
+@@ -516,7 +515,10 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            // do not round if the discarded fraction is equal to zero
++            if (unscaled != FastMath.floor(unscaled)) {
++                unscaled = FastMath.ceil(FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY));
++            }
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+69: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_2_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_2_Auto\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -475,7 +475,8 @@ public class Precision {
+             break;
+         case BigDecimal.ROUND_HALF_DOWN : {
+             unscaled = FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY);
+-            double fraction = unscaled - FastMath.floor(unscaled);
++            int n = 1;
++			double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction > 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+             } else {
+@@ -516,7 +517,7 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            unscaled = FastMath.ceil(unscaled);
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+70: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_2_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_2_Manual\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -491,8 +491,7 @@ public class Precision {
+                 unscaled = FastMath.floor(unscaled);
+             } else {
+                 // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
++                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(FastMath.floor(unscaled) / 2.0)) { // even
+                     unscaled = FastMath.floor(unscaled);
+                 } else { // odd
+                     unscaled = FastMath.ceil(unscaled);
+@@ -516,7 +515,10 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            // do not round if the discarded fraction is equal to zero
++            if (unscaled != FastMath.floor(unscaled)) {
++                unscaled = FastMath.ceil(FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY));
++            }
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+71: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_3_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_3_Auto\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -475,7 +475,8 @@ public class Precision {
+             break;
+         case BigDecimal.ROUND_HALF_DOWN : {
+             unscaled = FastMath.nextAfter(unscaled, Double.NEGATIVE_INFINITY);
+-            double fraction = unscaled - FastMath.floor(unscaled);
++            int n = 1;
++			double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction > 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+             } else {
+@@ -487,21 +488,24 @@ public class Precision {
+             double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction > 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+-            } else if (fraction < 0.5) {
+-                unscaled = FastMath.floor(unscaled);
+             } else {
+-                // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
+-                    unscaled = FastMath.floor(unscaled);
+-                } else { // odd
+-                    unscaled = FastMath.ceil(unscaled);
+-                }
+-            }
++				double hiPrec[] = new double[2];
++				if (fraction < 0.5) {
++					unscaled = FastMath.floor(unscaled);
++				} else {
++					if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
++							.floor(unscaled) / 2.0)) {
++						unscaled = FastMath.floor(unscaled);
++					} else {
++						unscaled = FastMath.ceil(unscaled);
++					}
++				}
++			}
+             break;
+         }
+         case BigDecimal.ROUND_HALF_UP : {
+-            unscaled = FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY);
++            final double hiPrec[] = new double[2];
++			unscaled = FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY);
+             double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction >= 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+@@ -516,7 +520,7 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            unscaled = FastMath.ceil(unscaled);
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+72: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_3_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_3_Manual\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -491,8 +491,7 @@ public class Precision {
+                 unscaled = FastMath.floor(unscaled);
+             } else {
+                 // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
++                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(FastMath.floor(unscaled) / 2.0)) { // even
+                     unscaled = FastMath.floor(unscaled);
+                 } else { // odd
+                     unscaled = FastMath.ceil(unscaled);
+@@ -516,7 +515,10 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            // do not round if the discarded fraction is equal to zero
++            if (unscaled != FastMath.floor(unscaled)) {
++                unscaled = FastMath.ceil(FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY));
++            }
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+73: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_4_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_4_Auto\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -487,17 +487,19 @@ public class Precision {
+             double fraction = unscaled - FastMath.floor(unscaled);
+             if (fraction > 0.5) {
+                 unscaled = FastMath.ceil(unscaled);
+-            } else if (fraction < 0.5) {
+-                unscaled = FastMath.floor(unscaled);
+             } else {
+-                // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
+-                    unscaled = FastMath.floor(unscaled);
+-                } else { // odd
+-                    unscaled = FastMath.ceil(unscaled);
+-                }
+-            }
++				double hiPrec[] = new double[2];
++				if (fraction < 0.5) {
++					unscaled = FastMath.floor(unscaled);
++				} else {
++					if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
++							.floor(unscaled) / 2.0)) {
++						unscaled = FastMath.floor(unscaled);
++					} else {
++						unscaled = FastMath.ceil(unscaled);
++					}
++				}
++			}
+             break;
+         }
+         case BigDecimal.ROUND_HALF_UP : {
+@@ -516,7 +518,7 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            unscaled = FastMath.ceil(unscaled);
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+74: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_4_Buggy\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-8e5867ed_4_Manual\\src\\org\\apache\\commons\\math3\\util\\Precision.java"	
+@@ -491,8 +491,7 @@ public class Precision {
+                 unscaled = FastMath.floor(unscaled);
+             } else {
+                 // The following equality test is intentional and needed for rounding purposes
+-                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(Math
+-                    .floor(unscaled) / 2.0)) { // even
++                if (FastMath.floor(unscaled) / 2.0 == FastMath.floor(FastMath.floor(unscaled) / 2.0)) { // even
+                     unscaled = FastMath.floor(unscaled);
+                 } else { // odd
+                     unscaled = FastMath.ceil(unscaled);
+@@ -516,7 +515,10 @@ public class Precision {
+             }
+             break;
+         case BigDecimal.ROUND_UP :
+-            unscaled = FastMath.ceil(FastMath.nextAfter(unscaled,  Double.POSITIVE_INFINITY));
++            // do not round if the discarded fraction is equal to zero
++            if (unscaled != FastMath.floor(unscaled)) {
++                unscaled = FastMath.ceil(FastMath.nextAfter(unscaled, Double.POSITIVE_INFINITY));
++            }
+             break;
+         default :
+             throw new MathIllegalArgumentException(LocalizedFormats.INVALID_ROUNDING_METHOD,
+
+75: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-9e0c5ad4_1_Buggy\\src\\org\\apache\\commons\\math4\\special\\Gamma.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-9e0c5ad4_1_Auto\\src\\org\\apache\\commons\\math4\\special\\Gamma.java"	
+@@ -654,7 +654,8 @@ public class Gamma {
+      */
+     public static double gamma(final double x) {
+ 
+-        if ((x == FastMath.rint(x)) && (x <= 0.0)) {
++        int m = 0;
++		if ((x == FastMath.rint(x)) && (x <= 0.0)) {
+             return Double.NaN;
+         }
+ 
+@@ -689,29 +690,31 @@ public class Gamma {
+                 double t = x;
+                 while (t < -0.5) {
+                     t += 1.0;
+-                    prod *= t;
++                    final int n = (int) FastMath.floor(x - 1.5);
++					prod *= t;
+                 }
+                 ret = 1.0 / (prod * (1.0 + invGamma1pm1(t)));
+             }
+         } else {
+-            final double y = absX + LANCZOS_G + 0.5;
+-            final double gammaAbs = SQRT_TWO_PI / x *
+-                                    FastMath.pow(y, absX + 0.5) *
+-                                    FastMath.exp(-y) * lanczos(absX);
+-            if (x > 0.0) {
+-                ret = gammaAbs;
+-            } else {
+-                /*
+-                 * From the reflection formula
+-                 * Gamma(x) * Gamma(1 - x) * sin(pi * x) = pi,
+-                 * and the recurrence relation
+-                 * Gamma(1 - x) = -x * Gamma(-x),
+-                 * it is found
+-                 * Gamma(x) = -pi / [x * sin(pi * x) * Gamma(-x)].
+-                 */
+-                ret = -FastMath.PI /
+-                      (x * FastMath.sin(FastMath.PI * x) * gammaAbs);
+-            }
++            if (x >= 1.0) {
++				double prod = 1.0;
++				double t = x;
++				while (t > 2.5) {
++					t -= 1.0;
++					prod *= t;
++				}
++				ret = prod / (1.0 + invGamma1pm1(t - 1.0));
++			} else {
++				double prod = x;
++				double t = x;
++				while (t < -0.5) {
++					t += 1.0;
++					prod *= t;
++				}
++				ret = 1.0 / (prod * (1.0 + invGamma1pm1(t)));
++			}
++			final double y = absX + LANCZOS_G + 0.5;
++            boolean readyToNormalize = false;
+         }
+         return ret;
+     }
+
+76: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-9e0c5ad4_1_Buggy\\src\\org\\apache\\commons\\math4\\special\\Gamma.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-9e0c5ad4_1_Manual\\src\\org\\apache\\commons\\math4\\special\\Gamma.java"	
+@@ -695,7 +695,7 @@ public class Gamma {
+             }
+         } else {
+             final double y = absX + LANCZOS_G + 0.5;
+-            final double gammaAbs = SQRT_TWO_PI / x *
++            final double gammaAbs = SQRT_TWO_PI / absX *
+                                     FastMath.pow(y, absX + 0.5) *
+                                     FastMath.exp(-y) * lanczos(absX);
+             if (x > 0.0) {
+
+77: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-a06a1584_3_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-a06a1584_3_Auto\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -291,21 +291,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+ 
+         // search in the near branch
+         final SubHyperplane<Euclidean3D> crossed = recurseFirstIntersection(near, point, line);
+-        if (crossed != null) {
+-            return crossed;
+-        }
+-
+-        if (!in) {
+-            // search in the cut hyperplane
+-            final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
+-                final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+-                if (facet != null) {
+-                    return facet;
+-                }
+-            }
+-        }
+-
+         // search in the far branch
+         return recurseFirstIntersection(far, point, line);
+ 
+@@ -323,10 +308,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         @SuppressWarnings("unchecked")
+         final BoundaryAttribute<Euclidean3D> attribute =
+             (BoundaryAttribute<Euclidean3D>) node.getAttribute();
+-        if ((attribute.getPlusOutside() != null) &&
+-            (((SubPlane) attribute.getPlusOutside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+-            return attribute.getPlusOutside();
+-        }
+         if ((attribute.getPlusInside() != null) &&
+             (((SubPlane) attribute.getPlusInside()).getRemainingRegion().checkPoint(point2D) == Location.INSIDE)) {
+             return attribute.getPlusInside();
+
+78: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-a06a1584_3_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\GenProg-Bugs.jar-Commons-Math-a06a1584_3_Manual\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -240,9 +240,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+     /** Get the first sub-hyperplane crossed by a semi-infinite line.
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     public SubHyperplane<Euclidean3D> firstIntersection(final Vector3D point, final Line line) {
+         return recurseFirstIntersection(getTree(true), point, line);
+@@ -252,9 +252,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+      * @param node current node
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     private SubHyperplane<Euclidean3D> recurseFirstIntersection(final BSPTree<Euclidean3D> node,
+                                                                 final Vector3D point,
+@@ -266,11 +266,11 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+         final BSPTree<Euclidean3D> plus  = node.getPlus();
+-        final Plane               plane = (Plane) cut.getHyperplane();
++        final Plane                plane = (Plane) cut.getHyperplane();
+ 
+         // establish search order
+         final double offset = plane.getOffset((Point<Euclidean3D>) point);
+-        final boolean in    = FastMath.abs(offset) < 1.0e-10;
++        final boolean in    = FastMath.abs(offset) < getTolerance();
+         final BSPTree<Euclidean3D> near;
+         final BSPTree<Euclidean3D> far;
+         if (offset < 0) {
+@@ -298,7 +298,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
++            if (hit3D != null && line.getAbscissa(hit3D) > line.getAbscissa(point)) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+                 if (facet != null) {
+                     return facet;
+
+79: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-596ccd59_0_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -316,7 +316,9 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+      */
+     private void updateClusterCenters() {
+         int j = 0;
+-        final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
++        if (true)
++			return;
++		final List<CentroidCluster<T>> newClusters = new ArrayList<CentroidCluster<T>>(k);
+         for (final CentroidCluster<T> cluster : clusters) {
+             final Clusterable center = cluster.getCenter();
+             int i = 0;
+
+80: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-596ccd59_0_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+81: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-a06a1584_0_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-a06a1584_0_Auto\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -261,7 +261,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+                                                                 final Line line) {
+ 
+         final SubHyperplane<Euclidean3D> cut = node.getCut();
+-        if (cut == null) {
++        if (true) {
+             return null;
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+
+82: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-a06a1584_0_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Commons-Math-a06a1584_0_Manual\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -240,9 +240,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+     /** Get the first sub-hyperplane crossed by a semi-infinite line.
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     public SubHyperplane<Euclidean3D> firstIntersection(final Vector3D point, final Line line) {
+         return recurseFirstIntersection(getTree(true), point, line);
+@@ -252,9 +252,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+      * @param node current node
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     private SubHyperplane<Euclidean3D> recurseFirstIntersection(final BSPTree<Euclidean3D> node,
+                                                                 final Vector3D point,
+@@ -266,11 +266,11 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+         final BSPTree<Euclidean3D> plus  = node.getPlus();
+-        final Plane               plane = (Plane) cut.getHyperplane();
++        final Plane                plane = (Plane) cut.getHyperplane();
+ 
+         // establish search order
+         final double offset = plane.getOffset((Point<Euclidean3D>) point);
+-        final boolean in    = FastMath.abs(offset) < 1.0e-10;
++        final boolean in    = FastMath.abs(offset) < getTolerance();
+         final BSPTree<Euclidean3D> near;
+         final BSPTree<Euclidean3D> far;
+         if (offset < 0) {
+@@ -298,7 +298,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
++            if (hit3D != null && line.getAbscissa(hit3D) > line.getAbscissa(point)) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+                 if (facet != null) {
+                     return facet;
+
+83: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Jackrabbit-Oak-ffa818f3_0_Buggy\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Jackrabbit-Oak-ffa818f3_0_Auto\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
+@@ -113,7 +113,9 @@ public class Id implements Comparable<Id> {
+         
+         for (int i = 0; i < len; i++) {
+             if (raw[i] != other[i]) {
+-                return raw[i] - other[i];
++                if (true)
++					return -1;
++				return raw[i] - other[i];
+             }
+         }
+         return raw.length - other.length;
+
+84: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Jackrabbit-Oak-ffa818f3_0_Buggy\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Kali-Bugs.jar-Jackrabbit-Oak-ffa818f3_0_Manual\\src\\org\\apache\\jackrabbit\\mk\\model\\Id.java"	
+@@ -113,7 +113,9 @@ public class Id implements Comparable<Id> {
+         
+         for (int i = 0; i < len; i++) {
+             if (raw[i] != other[i]) {
+-                return raw[i] - other[i];
++                final int rawValue = raw[i] & 0xFF; // unsigned value
++                final int otherValue = other[i] & 0xFF; // unsigned value
++                return rawValue - otherValue;
+             }
+         }
+         return raw.length - other.length;
+
+85: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Nopol-Bugs.jar-Commons-Math-bfbb156d_0_Buggy\\src\\org\\apache\\commons\\math3\\optimization\\direct\\CMAESOptimizer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Nopol-Bugs.jar-Commons-Math-bfbb156d_0_Auto\\src\\org\\apache\\commons\\math3\\optimization\\direct\\CMAESOptimizer.java"	
+@@ -526,28 +526,30 @@ public class CMAESOptimizer
+                 }
+             }
+ 
+-            if (hasInfiniteBounds) {
+-                // If there is at least one finite bound, none can be infinite,
+-                // because mixed cases are not supported by the current code.
+-                throw new MathUnsupportedOperationException();
+-            } else {
+-                // Convert API to internal handling of boundaries.
+-                boundaries = new double[2][];
+-                boundaries[0] = lB;
+-                boundaries[1] = uB;
+-
+-                // Abort early if the normalization will overflow (cf. "encode" method).
+-                for (int i = 0; i < lB.length; i++) {
+-                    if (Double.isInfinite(boundaries[1][i] - boundaries[0][i])) {
+-                        final double max = Double.MAX_VALUE + boundaries[0][i];
+-                        final NumberIsTooLargeException e
++            if (!(((hasInfiniteBounds) && (org.apache.commons.math3.optimization.direct.CMAESOptimizer.this.statisticsDHistory!=null)) || (uB.length < org.apache.commons.math3.optimization.direct.CMAESOptimizer.this.lambda))) {
++                if (hasInfiniteBounds) {
++                    // If there is at least one finite bound, none can be infinite,
++                    // because mixed cases are not supported by the current code.
++                    throw new MathUnsupportedOperationException();
++                } else {
++                    // Convert API to internal handling of boundaries.
++                    boundaries = new double[2][];
++                    boundaries[0] = lB;
++                    boundaries[1] = uB;
++                    
++                    // Abort early if the normalization will overflow (cf. "encode" method).
++                    for (int i = 0; i < lB.length; i++) {
++                        if (Double.isInfinite(boundaries[1][i] - boundaries[0][i])) {
++                            final double max = Double.MAX_VALUE + boundaries[0][i];
++                            final NumberIsTooLargeException e
+                             = new NumberIsTooLargeException(boundaries[1][i],
+-                                                            max,
+-                                                            true);
+-                        e.getContext().addMessage(LocalizedFormats.OVERFLOW);
+-                        e.getContext().addMessage(LocalizedFormats.INDEX, i);
+-
+-                        throw e;
++                            max,
++                            true);
++                            e.getContext().addMessage(LocalizedFormats.OVERFLOW);
++                            e.getContext().addMessage(LocalizedFormats.INDEX, i);
++                            
++                            throw e;
++                        }
+                     }
+                 }
+             }
+
+86: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Nopol-Bugs.jar-Commons-Math-bfbb156d_0_Buggy\\src\\org\\apache\\commons\\math3\\optimization\\direct\\CMAESOptimizer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\Nopol-Bugs.jar-Commons-Math-bfbb156d_0_Manual\\src\\org\\apache\\commons\\math3\\optimization\\direct\\CMAESOptimizer.java"	
+@@ -123,13 +123,11 @@ public class CMAESOptimizer
+     private boolean isActiveCMA;
+     /**
+      * Determines how often a new random offspring is generated in case it is
+-     * not feasible / beyond the defined limits, default is 0. Only relevant if
+-     * boundaries != null.
++     * not feasible / beyond the defined limits, default is 0.
+      */
+     private int checkFeasableCount;
+     /**
+-     * Lower and upper boundaries of the objective variables. boundaries == null
+-     * means no boundaries.
++     * Lower and upper boundaries of the objective variables.
+      */
+     private double[][] boundaries;
+     /**
+@@ -357,7 +355,7 @@ public class CMAESOptimizer
+          // 
+87: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_0_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -325,9 +325,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
+                 sum += u;
+                 i++;
+             }
+
+88: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_0_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_0_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+89: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_1_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_1_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,9 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
++            if (size < k) {
++				throw new NumberIsTooSmallException(size, k, false);
++			}
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+
+90: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_1_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_1_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+91: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_2_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_2_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -284,10 +284,7 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+         membershipMatrix = new double[size][k];
+         final double[][] oldMatrix = new double[size][k];
+ 
+-        // if no points are provided, return an empty list of clusters
+-        if (size == 0) {
+-            return clusters;
+-        }
++        int nextPointIndex = -1;
+ 
+         initializeMembershipMatrix();
+ 
+@@ -325,9 +322,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+             for (final T point : points) {
+                 final double u = FastMath.pow(membershipMatrix[i][j], fuzziness);
+                 final double[] pointArr = point.getPoint();
+-                for (int idx = 0; idx < arr.length; idx++) {
+-                    arr[idx] += u * pointArr[idx];
+-                }
+                 sum += u;
+                 i++;
+             }
+
+92: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_2_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_2_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+93: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_3_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_3_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,6 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+@@ -333,7 +332,7 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+             }
+             MathArrays.scaleInPlace(1.0 / sum, arr);
+             newClusters.add(new CentroidCluster<T>(new DoublePoint(arr)));
+-            j++;
++            break;
+         }
+         clusters.clear();
+         clusters = newClusters;
+
+94: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_3_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_3_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+95: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_4_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_4_Auto\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -303,7 +303,7 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+ 
+         do {
+             saveMembershipMatrix(oldMatrix);
+-            updateClusterCenters();
++            int i = 0;
+             updateMembershipMatrix();
+             difference = calculateMaxMembershipChange(oldMatrix);
+         } while (difference > epsilon && ++iteration < max);
+
+96: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_4_Buggy\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-596ccd59_4_Manual\\src\\org\\apache\\commons\\math3\\ml\\clustering\\FuzzyKMeansClusterer.java"	
+@@ -346,18 +346,32 @@ public class FuzzyKMeansClusterer<T extends Clusterable> extends Clusterer<T> {
+     private void updateMembershipMatrix() {
+         for (int i = 0; i < points.size(); i++) {
+             final T point = points.get(i);
+-            double maxMembership = 0.0;
++            double maxMembership = Double.MIN_VALUE;
+             int newCluster = -1;
+             for (int j = 0; j < clusters.size(); j++) {
+                 double sum = 0.0;
+                 final double distA = FastMath.abs(distance(point, clusters.get(j).getCenter()));
+ 
+-                for (final CentroidCluster<T> c : clusters) {
+-                    final double distB = FastMath.abs(distance(point, c.getCenter()));
+-                    sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                if (distA != 0.0) {
++                    for (final CentroidCluster<T> c : clusters) {
++                        final double distB = FastMath.abs(distance(point, c.getCenter()));
++                        if (distB == 0.0) {
++                            sum = Double.POSITIVE_INFINITY;
++                            break;
++                        }
++                        sum += FastMath.pow(distA / distB, 2.0 / (fuzziness - 1.0));
++                    }
+                 }
+ 
+-                membershipMatrix[i][j] = 1.0 / sum;
++                double membership;
++                if (sum == 0.0) {
++                    membership = 1.0;
++                } else if (sum == Double.POSITIVE_INFINITY) {
++                    membership = 0.0;
++                } else {
++                    membership = 1.0 / sum;
++                }
++                membershipMatrix[i][j] = membership;
+ 
+                 if (membershipMatrix[i][j] > maxMembership) {
+                     maxMembership = membershipMatrix[i][j];
+
+97: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_0_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_0_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -128,7 +128,16 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+       interpolator.shift();
+ 
+-      // first stage
++      if (forward) {
++		if (stepStart + stepSize >= t) {
++			stepSize = t - stepStart;
++		}
++	} else {
++		if (stepStart + stepSize <= t) {
++			stepSize = t - stepStart;
++		}
++	}
++	// first stage
+       computeDerivatives(stepStart, y, yDotK[0]);
+ 
+       // next stages
+
+98: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_0_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_0_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+99: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_1_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_1_Auto\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -135,7 +135,16 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+       for (int k = 1; k < stages; ++k) {
+ 
+           for (int j = 0; j < y0.length; ++j) {
+-              double sum = a[k-1][0] * yDotK[0][j];
++              if (!isLastStep) {
++				interpolator.storeTime(stepStart);
++				final double nextT = stepStart + stepSize;
++				final boolean nextIsLast = forward ? (nextT >= t)
++						: (nextT <= t);
++				if (nextIsLast) {
++					stepSize = t - stepStart;
++				}
++			}
++			double sum = a[k-1][0] * yDotK[0][j];
+               for (int l = 1; l < k; ++l) {
+                   sum += a[k-1][l] * yDotK[l][j];
+               }
+
+100: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_1_Buggy\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-69273dca_1_Manual\\src\\org\\apache\\commons\\math3\\ode\\nonstiff\\RungeKuttaIntegrator.java"	
+@@ -119,7 +119,19 @@ public abstract class RungeKuttaIntegrator extends AbstractIntegrator {
+ 
+     // set up integration control objects
+     stepStart = equations.getTime();
+-    stepSize  = forward ? step : -step;
++    if (forward) {
++        if (stepStart + step >= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = step;
++        }
++    } else {
++        if (stepStart - step <= t) {
++            stepSize = t - stepStart;
++        } else {
++            stepSize = -step;
++        }
++    }
+     initIntegration(equations.getTime(), y0, t);
+ 
+     // main integration loop
+
+101: _Auto\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-a06a1584_3_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-a06a1584_3_Auto\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -295,17 +295,6 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+             return crossed;
+         }
+ 
+-        if (!in) {
+-            // search in the cut hyperplane
+-            final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
+-                final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+-                if (facet != null) {
+-                    return facet;
+-                }
+-            }
+-        }
+-
+         // search in the far branch
+         return recurseFirstIntersection(far, point, line);
+ 
+
+102: _Manual\
+--- "a/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-a06a1584_3_Buggy\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
++++ "b/C:\\Users\\UROS\\Documents\\GitHub\\APR-PQA\\0. Data_Sources\\scripts\\Chunk_And_Lines\\..\\Bugs.jar_Result_51_Packages\\RSRepair-Bugs.jar-Commons-Math-a06a1584_3_Manual\\src\\org\\apache\\commons\\math4\\geometry\\euclidean\\threed\\PolyhedronsSet.java"	
+@@ -240,9 +240,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+     /** Get the first sub-hyperplane crossed by a semi-infinite line.
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     public SubHyperplane<Euclidean3D> firstIntersection(final Vector3D point, final Line line) {
+         return recurseFirstIntersection(getTree(true), point, line);
+@@ -252,9 +252,9 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+      * @param node current node
+      * @param point start point of the part of the line considered
+      * @param line line to consider (contains point)
+-     * @return the first sub-hyperplaned crossed by the line after the
++     * @return the first sub-hyperplane crossed by the line after the
+      * given point, or null if the line does not intersect any
+-     * sub-hyperplaned
++     * sub-hyperplane
+      */
+     private SubHyperplane<Euclidean3D> recurseFirstIntersection(final BSPTree<Euclidean3D> node,
+                                                                 final Vector3D point,
+@@ -266,11 +266,11 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         }
+         final BSPTree<Euclidean3D> minus = node.getMinus();
+         final BSPTree<Euclidean3D> plus  = node.getPlus();
+-        final Plane               plane = (Plane) cut.getHyperplane();
++        final Plane                plane = (Plane) cut.getHyperplane();
+ 
+         // establish search order
+         final double offset = plane.getOffset((Point<Euclidean3D>) point);
+-        final boolean in    = FastMath.abs(offset) < 1.0e-10;
++        final boolean in    = FastMath.abs(offset) < getTolerance();
+         final BSPTree<Euclidean3D> near;
+         final BSPTree<Euclidean3D> far;
+         if (offset < 0) {
+@@ -298,7 +298,7 @@ public class PolyhedronsSet extends AbstractRegion<Euclidean3D, Euclidean2D> {
+         if (!in) {
+             // search in the cut hyperplane
+             final Vector3D hit3D = plane.intersection(line);
+-            if (hit3D != null) {
++            if (hit3D != null && line.getAbscissa(hit3D) > line.getAbscissa(point)) {
+                 final SubHyperplane<Euclidean3D> facet = boundaryFacet(hit3D, node);
+                 if (facet != null) {
+                     return facet;
+
